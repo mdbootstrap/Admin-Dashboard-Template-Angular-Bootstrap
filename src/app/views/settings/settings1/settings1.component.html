@@ -1,0 +1,298 @@
+<!-- Nav tabs -->
+<mdb-tabset #staticTabs [buttonClass]="'nav-tabs tabs-4  grey margin'" [contentClass]="''" (showBsTab)="showLoader($event)">
+  <!--Panel 1-->
+  <mdb-tab heading="<i class='fa fa-file-text-o' aria-hidden='true'></i> About">
+    <!--First row-->
+    <div class="row mt-3">
+      <!--First column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <input placeholder="MDB Admin Dashboard (Angular)" [disabled]='true' type="text" id="form11" class="form-control">
+          <label class="active disabled" for="form11">Name</label>
+        </div>
+      </div>
+      <!--Second column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <input placeholder="4.3.2" type="text" id="form12" [disabled]='true' class="form-control">
+          <label class="active" for="form12">Version</label>
+        </div>
+      </div>
+    </div>
+    <!--/.First row-->
+    <!--Second row-->
+    <div class="row">
+      <!--First column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <input placeholder="https://mdbootstrap.com/angular" [disabled]='true' type="text" id="form11" class="form-control">
+          <label class="active disabled" for="form11">URL</label>
+        </div>
+      </div>
+      <!--Second column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <input placeholder="MDBootstrap Team" [disabled]='true' type="text" id="form12" class="form-control">
+          <label class="active" for="form12">Author</label>
+        </div>
+      </div>
+    </div>
+    <!--/.Second row-->
+    <!--Third row-->
+    <div class="row">
+      <!--First column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <textarea mdbActive type="text" [disabled]='true' id="form76" class="md-textarea">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,eaque
+            ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </textarea>
+          <label for="form76">Description</label>
+        </div>
+      </div>
+      <!--Second column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <input placeholder="Active" [disabled]='true' type="text" id="form12" class="form-control">
+          <label class="active" for="form12">Status</label>
+        </div>
+      </div>
+    </div>
+    <!--/.Third row-->
+    <!--Second row-->
+    <div class="row">
+      <!--First column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <label class="active disabled" for="form11">Tags:</label>
+        </div>
+        <div class="chip">Angular</div>
+        <div class="chip">Admin</div>
+        <div class="chip">Java Script</div>
+        <div class="chip">HTML</div>
+        <div class="chip">CSS</div>
+        <div class="chip">Dashboard</div>
+        <div class="chip">Typescript</div>
+        <div class="chip">Template</div>
+        <div class="chip">Server</div>
+        <div class="chip">Website</div>
+        <div class="chip">Charts</div>
+        <div class="chip">Tables</div>
+        <div class="chip">Alerts</div>
+        <div class="chip">Notifications</div>
+        <div class="chip">Analysis</div>
+        <div class="chip">Business</div>
+        <div class="chip">Sales</div>
+      </div>
+      <!--Second column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <input placeholder="office@myexample.com" [disabled]='true' type="text" id="form12" class="form-control">
+          <label class="active" for="form12">Email</label>
+        </div>
+      </div>
+    </div>
+    <!--/.Second row-->
+  </mdb-tab>
+  <!--Panel 2-->
+  <mdb-tab heading="<i class='fa fa-wrench' aria-hidden='true'></i> Settings">
+    <!--First row-->
+    <div class="row mt-3">
+      <!--First column-->
+      <div class="col-md-6">
+        <label for="basic-url">Username</label>
+        <div class="md-form input-group">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-addon" id="basic-addon2">@example.com</span>
+        </div>
+      </div>
+      <!--Second column-->
+      <div class="col-md-6">
+        <label for="basic-url">URL</label>
+        <div class="md-form input-group">
+          <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+      </div>
+    </div>
+    <!--/.First row-->
+    <!--Second row-->
+    <div class="row">
+      <!--First column-->
+      <div class="col-md-6">
+        <h3>Link options:</h3>
+        <div class="form-group">
+          <input name="group1" type="radio" class="with-gap" id="radio1" checked="checked">
+          <label for="radio1">Plain</label>
+        </div>
+
+        <div class="form-group">
+          <input name="group1" type="radio" class="with-gap" id="radio2">
+          <label for="radio2">Day and name</label>
+        </div>
+
+        <div class="form-group">
+          <input name="group1" type="radio" class="with-gap" id="radio3">
+          <label for="radio3">Numeric</label>
+        </div>
+      </div>
+      <!--Second column-->
+      <div class="col-md-6">
+        <h3>Share options:</h3>
+
+        <div class="form-group">
+          <input type="checkbox" id="checkbox1" checked="checked">
+          <label for="checkbox1">Facebook</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="checkbox2" checked="checked">
+          <label for="checkbox2">Twitter</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="checkbox3">
+          <label for="checkbox3">Google+</label>
+        </div>
+      </div>
+    </div>
+    <!--/.Second row-->
+    <!--Third row-->
+    <div class="row">
+      <!--First column-->
+      <div class="col-md-6">
+        <h3>Do you want this option?</h3>
+        <form class="form-inline">
+          <div class="form-group">
+            <input name="group1" type="radio" id="radio11" checked="checked">
+            <label for="radio11">Yes</label>
+          </div>
+          <div class="form-group">
+            <input name="group1" type="radio" id="radio21">
+            <label for="radio21">No</label>
+          </div>
+        </form>
+      </div>
+      <!--Second column-->
+      <div class="col-md-6">
+        <h3>Autoshare?</h3>
+        <!-- Switch -->
+        <div class="switch">
+          <label>
+            Off
+            <input type="checkbox">
+            <span class="lever"></span>
+            On
+          </label>
+        </div>
+      </div>
+    </div>
+    <!--/.Third row-->
+  </mdb-tab>
+  <!--Panel 3-->
+  <mdb-tab heading="<i class='fa fa-share-alt' aria-hidden='true'></i> Social">
+    <!--First row-->
+    <div class="row mt-3">
+      <!--First column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <i class="fa fa-facebook prefix"></i>
+          <input placeholder="https://www.facebook.com/mdbootstrap" type="text" id="form2" class="form-control">
+        </div>
+      </div>
+      <!--Second column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <i class="fa fa-linkedin prefix"></i>
+          <input placeholder="https://www.linkedin.com/company/10912052" type="text" id="form2" class="form-control">
+        </div>
+      </div>
+    </div>
+    <!--/.First row-->
+    <!--Second row-->
+    <div class="row mt-3">
+      <!--First column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <i class="fa fa-twitter prefix"></i>
+          <input placeholder="https://twitter.com/MDBootstrap" type="text" id="form2" class="form-control">
+        </div>
+      </div>
+      <!--Second column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <i class="fa fa-google-plus prefix"></i>
+          <input placeholder="https://plus.google.com/u/0/b/107863090883699620484/+Mdbootstrap/posts" type="text" id="form2" class="form-control">
+        </div>
+      </div>
+    </div>
+    <!--/.Second row-->
+    <!--Third row-->
+    <div class="row mt-3">
+      <!--First column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <i class="fa fa-instagram prefix"></i>
+          <input placeholder="https://istagram.com/mdbootstrap/" type="text" id="form2" class="form-control">
+        </div>
+      </div>
+      <!--Second column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <i class="fa fa-pinterest prefix"></i>
+          <input placeholder="https://pinterest.com/mdbootstrap/" type="text" id="form2" class="form-control">
+        </div>
+      </div>
+    </div>
+    <!--/.Third row-->
+    <!--Fourth row-->
+    <div class="row mt-3">
+      <!--First column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <i class="fa fa-youtube prefix"></i>
+          <input placeholder="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" type="text" id="form2" class="form-control">
+        </div>
+      </div>
+      <!--Second column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <i class="fa fa-dribbble prefix"></i>
+          <input placeholder="https://dribbble.com/mdbootstrap" type="text" id="form2" class="form-control">
+        </div>
+      </div>
+    </div>
+    <!--/.Fourth row-->
+    <!--Fifth row-->
+    <div class="row mt-3">
+      <!--First column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <i class="fa fa-github prefix"></i>
+          <input placeholder="https://github.com/mdbootstrap" type="text" id="form2" class="form-control">
+        </div>
+      </div>
+      <!--Second column-->
+      <div class="col-md-6">
+        <div class="md-form">
+          <i class="fa fa-stack-overflow prefix"></i>
+          <input placeholder="https://stackoverflow.com/mdbootstrap" type="text" id="form2" class="form-control">
+        </div>
+      </div>
+    </div>
+    <!--/.Fifth row-->
+  </mdb-tab>
+  <!--Panel 4-->
+  <mdb-tab heading="<span class='check'><i class='fa fa-spinner' aria-hidden='true'></i> Update</span>">
+    <div class="row">
+      <div class="col-12">
+        <br>
+        <h3 class="h3-responsive text-center">Your version (4.3.0) is up to date.</h3>
+        <h5 class="h5responsive text-center">Last update check on:
+          <code>2017.11.01</code>
+                    <div class="view hm-black-strong" *ngIf="visible" style="height:100vh;width:100vw;position:fixed;top:0;left:0;z-index:999">
+            <div class="mask flex-center"><p class="white-text">Comparing versions...</p><br>
+              <mdb-spinner spinnerType="big"></mdb-spinner>
+            </div>
+          </div>
+        </h5>
+      </div>
+    </div>
+  </mdb-tab>
+</mdb-tabset>

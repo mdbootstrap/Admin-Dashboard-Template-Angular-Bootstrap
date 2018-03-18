@@ -1,0 +1,11 @@
+<!--Panel-->
+<div class="card mt-3" [ngClass]="(alignment==='left')?'text-left':(alignment==='right')?'text-right':'text-center'">
+  <h3 class="card-header {{color}} white-text" *ngIf="header!==''">{{header}}</h3>
+  <div class="card-body">
+    <ng-content></ng-content>
+  </div>
+  <div class="card-footer text-muted {{color}} white-text" *ngIf="footer!==''">
+    <p class="mb-0">{{footer}}</p>
+  </div>
+</div>
+<!--/.Panel-->

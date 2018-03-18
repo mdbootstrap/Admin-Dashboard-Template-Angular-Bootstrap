@@ -1,0 +1,49 @@
+
+<app-navigation *ngIf="!specialPage"></app-navigation>
+
+<mdb-navbar *ngIf="specialPage" SideClass="navbar fixed-top navbar-expand-md scrolling-navbar" [containerInside]="false">
+
+  <!-- SideNav slide-out button -->
+  <div class="float-xs-left">
+    <a (click)="goBack()" class="mr-5"><i class="fa fa-arrow-left"></i> Go back</a>
+  </div>
+  <!--/. SideNav slide-out button -->
+
+  <!-- Breadcrumb-->
+  <div class="breadcrumb-dn mr-auto">
+      <p class="mb-0">Material Design for Bootstrap</p>
+  </div>
+  <!--/. Breadcrumb-->
+  
+  <ul class="nav navbar-nav nav-flex-icons ml-auto">
+      <li class="nav-item">
+      <a class="nav-link waves-light" mdbRippleRadius><i class="fa fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link waves-light" mdbRippleRadius><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link waves-light" mdbRippleRadius><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Account</span></a>
+  </li>
+  <li class="nav-item dropdown btn-group" dropdown>
+      <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius>
+          Dropdown
+      </a>
+      <div class="dropdown-menu dropdown-primary dropdown-menu-right" role="menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+  </li>
+  </ul>
+
+</mdb-navbar>
+
+<main [ngClass]="{'py-0 px-0 my-0 mx-0': specialPage}"  class="pt-5 mx-lg-5" >
+    
+  <div [class.container-fluid]="!specialPage" class="mt-5">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+
+<app-footer *ngIf="!specialPage"></app-footer>

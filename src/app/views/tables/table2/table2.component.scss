@@ -1,0 +1,14 @@
+.table-wrapper {
+    display: block;
+    max-height: 300px;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.blue-gradient {
+    background: -webkit-linear-gradient(50deg, #45cafc, #303f9f);
+    background: linear-gradient(40deg, #45cafc, #4285f4);
+}
+
+.table-ui {
+    border: 1px solid #e0e0e9;
+}

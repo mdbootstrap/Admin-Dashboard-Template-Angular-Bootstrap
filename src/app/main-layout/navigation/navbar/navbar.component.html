@@ -1,0 +1,88 @@
+
+    <!-- Navbar -->
+    <mdb-navbar SideClass="navbar fixed-top navbar-expand-md scrolling-navbar double-nav" [containerInside]="false">
+        <!-- SideNav slide-out button -->
+        <div class="float-xs-left">
+            <a class="button-collapse">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!--/. SideNav slide-out button -->
+
+        <!-- Breadcrumb-->
+        <div class="breadcrumb-dn mr-auto">
+            <p>Material Design for Bootstrap</p>
+        </div>
+        <!--/. Breadcrumb-->
+        <links>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbRippleRadius>
+                        <i class="fa fa-envelope"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Contact</span>
+                    </a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown btn-group" dropdown>
+
+                    <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius>
+                        <span class="badge red">3</span>
+                        <i class="fa fa-bell"></i>
+                        Notifications
+                    </a>
+                    <div class="dropdown-menu dropdown-primary dropdown-menu-right" role="menu">
+                        <a class="dropdown-item" href="#">
+                            <span>
+                                <i class="fa fa-money mr-2" aria-hidden="true"></i>
+                                <span>New order received</span>
+                            </span>
+                            <span class="ml-3">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i> 13 min
+                            </span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span>
+                                <i class="fa fa-money mr-2" aria-hidden="true"></i>
+                                <span>New order received</span>
+                            </span>
+                            <span class="ml-3">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i> 33 min
+                            </span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span>
+                                <i class="fa fa-line-chart mr-2" aria-hidden="true"></i>
+                                <span>Campaign about to end</span>
+                            </span>
+                            <span class="ml-3">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i> 53 min
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbRippleRadius>
+                        <i class="fa fa-comments-o"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Support</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbRippleRadius>
+                        <i class="fa fa-user"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Account</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown btn-group" dropdown>
+                    <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius>
+                        Dropdown
+                    </a>
+                    <div *dropdownMenu class="dropdown-menu dropdown-primary dropdown-menu-right" role="menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </links>
+    </mdb-navbar>
+    <!--/. Navbar -->

@@ -1,0 +1,19 @@
+<!--Card-->
+<div [ngClass]="(headerType==='wide')?'wider':(headerType==='narrow')?'narrower':''" class="card card-cascade mt-3">
+    <!--Card image-->
+    <div class="view overlay hm-white-slight waves-light" mdbRippleRadius>
+        <img src={{src}} class="img-fluid">
+        <a>
+            <div class="mask"></div>
+        </a>
+    </div>
+    <!--/Card image-->
+    <!--Card content-->
+    <div class="card-body" [ngClass]="(alignment==='left')?'text-left':(alignment==='right')?'text-right':'text-center'">
+        <h4 class="card-title mb-3 font-bold" *ngIf="title!==''"><strong>{{title}}</strong></h4>
+            <ng-content></ng-content>
+    </div>
+    <!--/.Card content-->
+
+</div>
+<!--/.Card-->

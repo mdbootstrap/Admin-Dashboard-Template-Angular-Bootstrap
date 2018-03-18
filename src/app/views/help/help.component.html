@@ -1,0 +1,153 @@
+<panel alignment="left">
+  <div class="card-body text-left">
+    <div class="row mb-1">
+      <div class="col-md-12">
+        <h4 class="h4-responsive mb-3 title">
+          Using Cascading Card Component
+        </h4>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-4">
+        <cascading-card src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" title="Title goes here">
+          <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </cascading-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="h4-responsive mb-4 title">
+          Code and Customization
+        </h4>
+        <p>To use the component simply wrap your card's content in the following:</p>
+        <section class="text-center mb-4">
+          <code class="language-markup">&lt;cascading-card&gt;...&lt;/cascading-card&gt;</code>
+        </section>
+        <p class="mb-4">At first, the component appears as a featureless surface. It can easily be transformed into a stylish (and customizable!)
+          display tool. It's achieved by using its four attributes.</p>
+        <table class="table table-sm">
+          <thead class="blue-gradient text-center white-text">
+            <th class="text-center" colspan="2">Attributes</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">src</th>
+              <td class="ml-10">
+                <p>What puts "cascading" into "cascading card" is an image. The attribute is used to specify the source of the
+                  picture - can be an URL or a relative path.</p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">headerType</th>
+              <td>
+                <p>The attribute is used to decide the context an image has inside the component. By default, picture and card
+                  containing it have the same width, but setting
+                  <code>headerType</code> to
+                  <code>wide</code> or
+                  <code>narrow</code> changes that.</p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">title</th>
+              <td>
+                <p>To easily set title for our card, we can add optional
+                  <code>title</code> attribute. The title passed in will be displayed as a
+                  <code>&lt;h4&gt;</code>
+                  <code>strong</code>ed header right under the picture. </p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">alignment</th>
+              <td>
+                <p>The final attribute is rather self-explanatory. It applies to card's content, and to be specific - everything
+                  passed in as
+                  <code>&lt;ng-content&gt;</code>, along with the title.
+                </p>
+                <p>It accepts
+                  <code>right</code> and
+                  <code>left</code> arguments; by default it's set on
+                  <code>center</code>.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</panel>
+<panel alignment="left">
+  <div class="card-body text-left">
+    <div class="row mb-1">
+      <div class="col-md-12">
+        <h4 class="h4-responsive mb-3 title">
+          Using Panel Component
+        </h4>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-4">
+        <panel header="Header is here, Everyone!" color="success-color">
+          <p class="card-text mt-2">This is a paragraph</p>
+        </panel>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="h4-responsive mb-4 title">
+          Code and Customization
+        </h4>
+        <p>To use the component simply wrap your card's content in the following:</p>
+        <section class="text-center mb-4">
+          <code class="language-markup">&lt;panel&gt;...&lt;/panel&gt;</code>
+        </section>
+        <p class="mb-4">At first, the component appears as a featureless surface. It can easily be transformed into a stylish (and customizable!)
+          display tool. It's achieved by using its four attributes.</p>
+        <table class="table table-sm">
+          <thead class="blue-gradient text-center white-text">
+            <th class="text-center" colspan="2">Attributes</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">header</th>
+              <td class="ml-10">
+                <p>Including this attribute with some text will create a
+                  <code>&lt;div&gt;</code> element in the upper part of the the very panel, just as in the example above.</p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">footer</th>
+              <td>
+                <p>The attribute works symmetrically to
+                  <code>header</code>, except including it creates a footer in the bottom part of the panel.</p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">color</th>
+              <td>
+                <p>To add consistency to our layout, we can specify color to be applied to
+                  <code>header</code> and
+                  <code>footer</code> sections of the panel</p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">alignment</th>
+              <td>
+                <p>The final attribute is rather self-explanatory. It applies to panel's content, and to be specific - everything
+                  passed in as
+                  <code>&lt;ng-content&gt;</code>, along with the
+                  <code>footer</code> and
+                  <code>header</code>.</p>
+                <p>It accepts
+                  <code>right</code> and
+                  <code>left</code> as arguments; by default it's set on
+                  <code>center</code>.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</panel>
