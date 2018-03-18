@@ -573,7 +573,7 @@
                 <div class="text-center">
                   <h5 class="my-3">Size</h5>
   
-                  <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="loginAvatarForm.show()"
+                  <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="modalLoginAvatarDemo.show()"
                     mdbRippleRadius>
                     Small
                   </button>
@@ -594,7 +594,38 @@
                   </button>
                   <br>
   
-  
+                  <!--Modal Form Login with Avatar Demo-->
+                  <div  mdbModal #modalLoginAvatarDemo="mdb-modal" class="modal fade" id="modalLoginAvatarDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+                      <!--Content-->
+                      <div class="modal-content">
+
+                        <!--Header-->
+                        <div class="modal-header">
+                          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg" class="rounded-circle img-responsive">
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body text-center mb-1">
+
+                          <h5 class="mt-1 mb-2">Maria Doe</h5>
+
+                          <div class="md-form ml-0 mr-0">
+                            <input type="password" type="text" id="form1" class="form-control ml-0">
+                            <label for="form1" class="ml-0">Enter password</label>
+                          </div>
+
+                          <div class="text-center">
+                            <button class="btn btn-cyan mt-1">Login
+                              <i class="fa fa-sign-in ml-1"></i>
+                            </button>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!--/.Content-->
+                    </div>
+                  </div>
+                  <!--Modal Form Login with Avatar Demo-->
   
                   <div mdbModal #centralRegular="mdb-modal" class="modal fade" id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                     aria-hidden="true" [config]="{backdrop: true, ignoreBackdropClick: false}">
@@ -657,39 +688,7 @@
                     </div>
                   </div>
   
-                  <!--Modal Form Login with Avatar Demo-->
-                  <div class="modal fade" id="modalLoginAvatarDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
-                      <!--Content-->
-                      <div class="modal-content">
-  
-                        <!--Header-->
-                        <div class="modal-header">
-                          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg" class="rounded-circle img-responsive">
-                        </div>
-                        <!--Body-->
-                        <div class="modal-body text-center mb-1">
-  
-                          <h5 class="mt-1 mb-2">Maria Doe</h5>
-  
-                          <div class="md-form ml-0 mr-0">
-                            <input type="password" type="text" id="form1" class="form-control ml-0">
-                            <label for="form1" class="ml-0">Enter password</label>
-                          </div>
-  
-                          <div class="text-center">
-                            <button class="btn btn-cyan mt-1">Login
-                              <i class="fa fa-sign-in ml-1"></i>
-                            </button>
-                          </div>
-                        </div>
-  
-                      </div>
-                      <!--/.Content-->
-                    </div>
-                  </div>
-                  <!--Modal Form Login with Avatar Demo-->
-  
+
                 </div>
               </div>
               <!--Third column-->
@@ -724,6 +723,64 @@
                   </button>
                   <br>
   
+
+
+
+                    <div mdbModal #centralSuccess="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-notify modal-success" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <p class="heading lead">Modal Success</p>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="centralSuccess.hide()">
+                            <span aria-hidden="true" class="white-text">×</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="text-center">
+                            <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur
+                              in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.</p>
+                          </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                          <a type="button" class="btn btn-primary-modal waves-light" mdbRippleRadius>Get it now
+                            <i class="fa fa-diamond ml-1"></i>
+                          </a>
+                          <a type="button" class="btn btn-outline-secondary-modal" data-dismiss="modal" (click)="centralSuccess.hide()" mdbRippleRadius>No, thanks</a>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+
+
+                    <div mdbModal #fluidBottom="mdb-modal" class="modal fade bottom" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-notify modal-success" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <p class="heading lead">Modal Success</p>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="centralSuccess.hide()">
+                            <span aria-hidden="true" class="white-text">×</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="text-center">
+                            <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur
+                              in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.</p>
+                          </div>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                          <a type="button" class="btn btn-primary-modal waves-light" mdbRippleRadius>Get it now
+                            <i class="fa fa-diamond ml-1"></i>
+                          </a>
+                          <a type="button" class="btn btn-outline-secondary-modal" data-dismiss="modal" (click)="fluidBottom.hide()" mdbRippleRadius>No, thanks</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <div mdbModal #fluidRight="mdb-modal" class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-full-height modal-right" role="document">
