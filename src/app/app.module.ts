@@ -9,8 +9,6 @@ import { AppRoutes } from './app.routes.service';
 
 import { ViewsModule } from './views/views.module';
 import { SharedModule } from './shared/shared.module';
-// import { MDBSpinningPreloader } from './typescripts/pro/';
-
 import { ErrorModule } from './views/errors/error.module';
 
 // main layout
