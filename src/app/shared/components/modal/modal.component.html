@@ -1,0 +1,10 @@
+
+<!-- Button -->
+<button type="button" class="btn btn-primary relative waves-light" (click)="basicModal.show()" mdbRippleRadius>Launch demo modal</button>
+<!-- /Button -->
+
+<div mdbModal #basicModal="mdb-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: true}">
+    <div class="modal-dialog" [ngClass]="getClass()" role="document">
+            <ng-content></ng-content>
+    </div>
+</div>

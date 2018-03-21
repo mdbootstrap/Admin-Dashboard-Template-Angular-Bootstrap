@@ -1,0 +1,14 @@
+<!--Card-->
+<div [ngClass]="(headerType==='wide')?'wider':(headerType==='narrow')?'narrower':''" class="card card-cascade">
+  <!--Card image-->
+  <div class="view gradient-card-header {{panelClass}}">
+    <h4 class="h4-responsive">{{title}} </h4>
+  </div>
+  <!--/Card image-->
+  <!--Card content-->
+  <div class="card-body" [ngClass]="(alignment==='left')?'text-left':(alignment==='right')?'text-right':'text-center'">
+    <ng-content></ng-content>
+  </div>
+  <!--/.Card content-->
+</div>
+<!--/.Card-->

@@ -1,0 +1,47 @@
+
+.example-list {
+    padding: 0;
+    margin: .5em 0 1em;
+    list-style: none;
+    overflow-y: hidden;
+}
+
+.example-list-quad li {
+    float: left;
+    width: 100%;
+    max-width: 25%;
+    text-align: left;
+}
+
+#radius,
+#shadow,
+#size,
+#fontsize {
+    width: 20%;
+}
+
+.example li span {
+    cursor: pointer;
+}
+.icons-list-header {
+    width: 100%;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+.icons-list-header:before {
+    content: "";
+    clear: both;
+    display: block;
+    margin-bottom: 2rem;
+}
+.instafilta-target {
+    transition: .4s all;
+    border-radius:4px;
+}
+.instafilta-target:hover {
+    background-color:rgba(72,198,255,.8);
+    color:#fff;
+}

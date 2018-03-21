@@ -1,0 +1,893 @@
+<div class="row mt-5">
+  <div class="col-md-12">
+    <!--Card-->
+    <div class="card card-cascade narrower mt-5">
+
+      <!--Card image-->
+      <div class="view gradient-card-header blue-gradient">
+        <h4 class="h4-responsive">Modals </h4>
+      </div>
+      <!--/Card image-->
+
+      <!--Card content-->
+      <div class="card-body text-center">
+
+
+
+        <!--Section: Position & Sizes-->
+        <section>
+          <h4 class="mb-5 mt-4 dark-grey-text text-center font-bold">
+            <strong>Position & Sizes</strong>
+          </h4>
+
+          <div class="text-center mb-5">
+            <p class="lead">Click buttons below to launch modals demo</p>
+          </div>
+
+          <!-- First row-->
+          <div class="row">
+
+            <!--First column-->
+            <div class="col-md-3">
+              <h5 class="text-center mb-3">Frame Modal</h5>
+
+              <img src="https://mdbootstrap.com/img/brandflow/modal4.jpg" alt="" class="img-fluid z-depth-1">
+              <div class="text-center">
+                <h5 class="my-3">Position</h5>
+
+
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="frameTop.show()"
+                  mdbRippleRadius>
+                  Top
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="frameBottom.show()"
+                  mdbRippleRadius>
+                  Bottom
+                </button>
+
+                <div mdbModal #frameTop="mdb-modal" class="modal fade top" id="frameModalBottom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: false}">
+                  <div class="modal-dialog modal-frame modal-top" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body text-center">
+                        <div class="row px-4">
+                          <p class="pt-1 pr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quo provident fugiat reprehenderit
+                            nostrum quos..</p>
+                          <button type="button" class="btn btn-secondary waves-light" data-dismiss="modal" (click)="frameTop.hide()" mdbRippleRadius>Close</button>
+                          <button type="button" class="btn btn-primary waves-light" mdbRippleRadius>Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div mdbModal #frameBottom="mdb-modal" class="modal fade bottom" id="frameModalBottom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true" [config]="{backdrop: false, ignoreBackdropClick: false}">
+                  <div class="modal-dialog modal-frame modal-bottom" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body text-center">
+                        <div class="row px-4">
+                          <p class="pt-1 pr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quo provident fugiat reprehenderit
+                            nostrum quos..</p>
+                          <button type="button" class="btn btn-secondary waves-light" data-dismiss="modal" (click)="frameBottom.hide()" mdbRippleRadius>Close</button>
+                          <button type="button" class="btn btn-primary waves-light" mdbRippleRadius>Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--First column-->
+
+            <!--Second column-->
+            <div class="col-md-3">
+              <h5 class="text-center mb-3">Side Modal</h5>
+
+              <img src="https://mdbootstrap.com/img/brandflow/modal3.jpg" alt="" class="img-fluid z-depth-1">
+              <div class="text-center">
+                <h5 class="my-3">Position</h5>
+
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="sideTopRight.show()"
+                  mdbRippleRadius>
+                  Top right
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="sideTopLeft.show()"
+                  mdbRippleRadius>
+                  Top left
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="sideBottomRight.show()"
+                  mdbRippleRadius>
+                  Bottom right
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="sideBottomLeft.show()"
+                  mdbRippleRadius>
+                  Bottom left
+                </button>
+                <br>
+
+
+
+                <div mdbModal #sideTopRight="mdb-modal" class="modal fade right" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-side modal-top-right" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="sideTopRight.hide()">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary waves-light" data-dismiss="modal" (click)="sideTopRight.hide()" mdbRippleRadius>Close</button>
+                        <button type="button" class="btn btn-primary waves-light" mdbRippleRadius>Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div mdbModal #sideTopLeft="mdb-modal" class="modal fade left" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-side modal-top-left" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="sideTopLeft.hide()">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary waves-light" data-dismiss="modal" (click)="sideTopLeft.hide()" mdbRippleRadius>Close</button>
+                        <button type="button" class="btn btn-primary waves-light" mdbRippleRadius>Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div mdbModal #sideBottomRight="mdb-modal" class="modal fade right" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-side modal-bottom-right" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="sideBottomRight.hide()">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary waves-light" data-dismiss="modal" (click)="sideBottomRight.hide()" mdbRippleRadius>Close</button>
+                        <button type="button" class="btn btn-primary waves-light" mdbRippleRadius>Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div mdbModal #sideBottomLeft="mdb-modal" class="modal fade left" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-side modal-bottom-left" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="sideBottomLeft.hide()">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary waves-light" data-dismiss="modal" (click)="sideBottomLeft.hide()" mdbRippleRadius>Close</button>
+                        <button type="button" class="btn btn-primary waves-light" mdbRippleRadius>Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Second column-->
+
+            <!--Third column-->
+            <div class="col-md-3">
+              <h5 class="text-center mb-3">Central Modal</h5>
+
+              <img src="https://mdbootstrap.com/img/brandflow/modal2.jpg" alt="" class="img-fluid z-depth-1">
+              <div class="text-center">
+                <h5 class="my-3">Size</h5>
+
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="loginAvatarForm.show()"
+                  mdbRippleRadius>
+                  Small
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="centralRegular.show()"
+                  mdbRippleRadius>
+                  Medium
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="centralLarge.show()"
+                  mdbRippleRadius>
+                  Large
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="centralFluid.show()"
+                  mdbRippleRadius>
+                  Fluid
+                </button>
+                <br>
+
+
+
+                <div mdbModal #centralRegular="mdb-modal" class="modal fade" id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true" [config]="{backdrop: true, ignoreBackdropClick: false}">
+                  <div class="modal-dialog " role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="centralRegular.hide()">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm waves-light" data-dismiss="modal" (click)="centralRegular.hide()" mdbRippleRadius>Close</button>
+                        <button type="button" class="btn btn-primary btn-sm waves-light" mdbRippleRadius>Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div mdbModal #centralLarge="mdb-modal" class="modal fade" id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true" [config]="{backdrop: true, ignoreBackdropClick: false}">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="centralLarge.hide()">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm waves-light" data-dismiss="modal" (click)="centralLarge.hide()" mdbRippleRadius>Close</button>
+                        <button type="button" class="btn btn-primary btn-sm waves-light" mdbRippleRadius>Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div mdbModal #centralFluid="mdb-modal" class="modal fade" id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true" [config]="{backdrop: true, ignoreBackdropClick: false}">
+                  <div class="modal-dialog modal-fluid" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="centralFluid.hide()">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm waves-light" data-dismiss="modal" (click)="centralFluid.hide()" mdbRippleRadius>Close</button>
+                        <button type="button" class="btn btn-primary btn-sm waves-light" mdbRippleRadius>Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Modal Form Login with Avatar Demo-->
+                <div class="modal fade" id="modalLoginAvatarDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
+
+                      <!--Header-->
+                      <div class="modal-header">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg" class="rounded-circle img-responsive">
+                      </div>
+                      <!--Body-->
+                      <div class="modal-body text-center mb-1">
+
+                        <h5 class="mt-1 mb-2">Maria Doe</h5>
+
+                        <div class="md-form ml-0 mr-0">
+                          <input type="password" type="text" id="form1" class="form-control ml-0">
+                          <label for="form1" class="ml-0">Enter password</label>
+                        </div>
+
+                        <div class="text-center">
+                          <button class="btn btn-cyan mt-1">Login
+                            <i class="fa fa-sign-in ml-1"></i>
+                          </button>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--/.Content-->
+                  </div>
+                </div>
+                <!--Modal Form Login with Avatar Demo-->
+
+              </div>
+            </div>
+            <!--Third column-->
+
+            <!--Fourth column-->
+            <div class="col-md-3">
+              <h5 class="text-center mb-3">Fluid Modal</h5>
+
+              <img src="https://mdbootstrap.com/img/brandflow/modal1.jpg" alt="" class="img-fluid z-depth-1">
+              <div class="text-center">
+                <h5 class="my-3">Position</h5>
+
+
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="fluidRight.show()"
+                  mdbRippleRadius>
+                  Right
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="fluidLeft.show()"
+                  mdbRippleRadius>
+                  Left
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="centralSuccess.show()"
+                  mdbRippleRadius>
+                  Top
+                </button>
+                <br>
+                <button type="button" class="btn btn-primary waves-light" data-toggle="modal" data-target="#basicExample" (click)="fluidBottom.show()"
+                  mdbRippleRadius>
+                  Bottom 
+                </button>
+                <br>
+
+                <div mdbModal #fluidRight="mdb-modal" class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-full-height modal-right" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="fluidRight.hide()">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente magnam, sunt, ea dolore eum quod.
+                          Minima fugiat enim aut soluta est reprehenderit reiciendis quos, qui, amet possimus laborum assumenda
+                          voluptate.
+                        </p>
+
+                        <ul class="list-group z-depth-0">
+                          <li class="list-group-item justify-content-between">
+                            Cras justo odio
+                            <span class="badge badge-primary badge-pill">14</span>
+                          </li>
+                          <li class="list-group-item justify-content-between">
+                            Dapibus ac facilisis in
+                            <span class="badge badge-primary badge-pill">2</span>
+                          </li>
+                          <li class="list-group-item justify-content-between">
+                            Morbi leo risus
+                            <span class="badge badge-primary badge-pill">1</span>
+                          </li>
+                          <li class="list-group-item justify-content-between">
+                            Cras justo odio
+                            <span class="badge badge-primary badge-pill">14</span>
+                          </li>
+                          <li class="list-group-item justify-content-between">
+                            Dapibus ac facilisis in
+                            <span class="badge badge-primary badge-pill">2</span>
+                          </li>
+                          <li class="list-group-item justify-content-between">
+                            Morbi leo risus
+                            <span class="badge badge-primary badge-pill">1</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-secondary waves-light" data-dismiss="modal" (click)="fluidRight.hide()" mdbRippleRadius>Close</button>
+                        <button type="button" class="btn btn-primary waves-light" mdbRippleRadius>Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div mdbModal #fluidLeft="mdb-modal" class="modal fade left" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-full-height modal-left" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="fluidLeft.hide()">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente magnam, sunt, ea dolore eum quod.
+                          Minima fugiat enim aut soluta est reprehenderit reiciendis quos, qui, amet possimus laborum assumenda
+                          voluptate.
+                        </p>
+
+                        <ul class="list-group z-depth-0">
+                          <li class="list-group-item justify-content-between">
+                            Cras justo odio
+                            <span class="badge badge-primary badge-pill">14</span>
+                          </li>
+                          <li class="list-group-item justify-content-between">
+                            Dapibus ac facilisis in
+                            <span class="badge badge-primary badge-pill">2</span>
+                          </li>
+                          <li class="list-group-item justify-content-between">
+                            Morbi leo risus
+                            <span class="badge badge-primary badge-pill">1</span>
+                          </li>
+                          <li class="list-group-item justify-content-between">
+                            Cras justo odio
+                            <span class="badge badge-primary badge-pill">14</span>
+                          </li>
+                          <li class="list-group-item justify-content-between">
+                            Dapibus ac facilisis in
+                            <span class="badge badge-primary badge-pill">2</span>
+                          </li>
+                          <li class="list-group-item justify-content-between">
+                            Morbi leo risus
+                            <span class="badge badge-primary badge-pill">1</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-secondary waves-light" data-dismiss="modal" (click)="fluidLeft.hide()" mdbRippleRadius>Close</button>
+                        <button type="button" class="btn btn-primary waves-light" mdbRippleRadius>Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Fourth column-->
+
+          </div>
+          <!-- /.First row-->
+
+        </section>
+        <!--/Section: Position & Sizes-->
+
+        <h2 class="h2-responsive mt-5">Samples</h2>
+
+        <button type="button" class="btn btn-primary waves-light" (click)="centralSuccess.show()" mdbRippleRadius>Central Success Modal</button>
+        <button type="button" class="btn btn-info waves-light" (click)="sideInfo.show()" mdbRippleRadius>Side Info Modal</button>
+        <button type="button" class="btn btn-danger waves-light" (click)="fluidDanger.show()" mdbRippleRadius>Fluid Danger Modal</button>
+        <hr>
+        <button type="button" class="btn btn-primary waves-light" (click)="contactForm.show()" mdbRippleRadius>Contact form</button>
+        <button type="button" class="btn btn-primary waves-light" (click)="loginAvatarForm.show()" mdbRippleRadius>Login with avatar form</button>
+        <button type="button" class="btn btn-primary waves-light" (click)="loginForm.show()" mdbRippleRadius>Login form</button>
+        <button type="button" class="btn btn-primary waves-light" (click)="loginRegisterForm.show()" mdbRippleRadius>Login / Register form</button>
+        <button type="button" class="btn btn-primary waves-light" (click)="registerForm.show()" mdbRippleRadius>Register form</button>
+
+
+      </div>
+      <!--/.Card content-->
+    </div>
+    <!--/.Card-->
+  </div>
+</div>
+
+<!--Modal: Register Form-->
+<div mdbModal #registerForm="mdb-modal" class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header light-blue darken-3 white-text">
+        <h4 class="title">
+          <i class="fa fa-user-plus"></i> Register</h4>
+        <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close" (click)="registerForm.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+        <div class="md-form form-sm">
+          <i class="fa fa-envelope prefix"></i>
+          <input mdbActive type="text" id="form32" class="form-control">
+          <label for="form32">Your email</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fa fa-lock prefix"></i>
+          <input mdbActive type="password" id="form33" class="form-control">
+          <label for="form33">Your password</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fa fa-lock prefix"></i>
+          <input mdbActive type="password" id="form34" class="form-control">
+          <label for="form34">Repeat password</label>
+        </div>
+
+        <div class="text-center mt-2">
+          <button class="btn btn-info waves-light" mdbRippleRadius>Sign up
+            <i class="fa fa-sign-in ml-1"></i>
+          </button>
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        <div class="options text-center text-md-right mt-1">
+          <p>Already have an account?
+            <a href="#">Log In</a>
+          </p>
+        </div>
+        <button type="button" class="btn btn-outline-info ml-auto" data-dismiss="modal" (click)="registerForm.hide()" mdbRippleRadius>Close</button>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Register Form-->
+
+<!--Modal: Login Form-->
+<div mdbModal #loginForm="mdb-modal" class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header light-blue darken-3 white-text">
+        <h4 class="title">
+          <i class="fa fa-user"></i> Log in</h4>
+        <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close" (click)="registerForm.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+        <div class="md-form form-sm">
+          <i class="fa fa-envelope prefix"></i>
+          <input mdbActive type="text" id="form30" class="form-control">
+          <label for="form30">Your email</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fa fa-lock prefix"></i>
+          <input mdbActive type="password" id="form31" class="form-control">
+          <label for="form31">Your password</label>
+        </div>
+
+        <div class="text-center mt-2">
+          <button class="btn btn-info waves-light" mdbRippleRadius>Log in
+            <i class="fa fa-sign-in ml-1"></i>
+          </button>
+        </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        <div class="options text-center text-md-right mt-1">
+          <p>Not a member?
+            <a href="#">Sign Up</a>
+          </p>
+          <p>Forgot
+            <a href="#">Password?</a>
+          </p>
+        </div>
+        <button type="button" class="btn btn-outline-info ml-auto" data-dismiss="modal" (click)="registerForm.hide()" mdbRippleRadius>Close</button>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login Form-->
+
+<!--Modal: Login with Avatar Form-->
+<div mdbModal #loginAvatarForm="mdb-modal" class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.jpg" class="rounded-circle img-responsive">
+      </div>
+      <!--Body-->
+      <div class="modal-body text-center mb-1">
+
+        <h5 class="mt-1 mb-2">Maria Doe</h5>
+
+        <div class="md-form ml-0 mr-0">
+          <input mdbActive type="password" type="text" id="form29" class="form-control ml-0">
+          <label for="form29" class="ml-0">Enter password</label>
+        </div>
+
+        <div class="text-center">
+          <button class="btn btn-cyan mt-1 waves-light" mdbRippleRadius>Login
+            <i class="fa fa-sign-in ml-1"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login with Avatar Form-->
+
+<!--Modal: Login / Register Form-->
+<div mdbModal #loginRegisterForm="mdb-modal" class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Tab panels -->
+        <mdb-tabset #staticTabs [buttonClass]="'nav nav-tabs tabs-2 light-blue darken-3'" [contentClass]="''" class="tab-content">
+          <!--Panel 7-->
+          <mdb-tab class="tab-pane fade in show active" id="panel7" role="tabpanel" heading="<i class='fa fa-user mr-1'></i> Login">
+
+            <!--Body-->
+            <div class="modal-body mb-1">
+              <div class="md-form form-sm">
+                <i class="fa fa-envelope prefix"></i>
+                <input mdbActive type="text" id="form22" class="form-control">
+                <label for="form22">Your email</label>
+              </div>
+
+              <div class="md-form form-sm">
+                <i class="fa fa-lock prefix"></i>
+                <input mdbActive type="password" id="form23" class="form-control">
+                <label for="form23">Your password</label>
+              </div>
+              <div class="text-center mt-2">
+                <button class="btn btn-info waves-light" mdbRippleRadius>Log in
+                  <i class="fa fa-sign-in ml-1"></i>
+                </button>
+              </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer display-footer">
+              <div class="options text-center text-md-right mt-1">
+                <p>Not a member?
+                  <a href="#" class="blue-text">Sign Up</a>
+                </p>
+                <p>Forgot
+                  <a href="#" class="blue-text">Password?</a>
+                </p>
+              </div>
+              <button type="button" class="btn btn-outline-info ml-auto" data-dismiss="modal" (click)="loginRegisterForm.hide()" mdbRippleRadius>Close</button>
+            </div>
+
+          </mdb-tab>
+          <!--/.Panel 7-->
+
+          <!--Panel 8-->
+          <mdb-tab class="tab-pane fade" id="panel8" role="tabpanel" heading="<i class='fa fa-user-plus mr-1'></i> Register">
+
+            <!--Body-->
+            <div class="modal-body">
+              <div class="md-form form-sm">
+                <i class="fa fa-envelope prefix"></i>
+                <input mdbActive type="text" id="form24" class="form-control">
+                <label for="form24">Your email</label>
+              </div>
+
+              <div class="md-form form-sm">
+                <i class="fa fa-lock prefix"></i>
+                <input mdbActive type="password" id="form25" class="form-control">
+                <label for="form25">Your password</label>
+              </div>
+
+              <div class="md-form form-sm">
+                <i class="fa fa-lock prefix"></i>
+                <input mdbActive type="password" id="form26" class="form-control">
+                <label for="form26">Repeat password</label>
+              </div>
+
+              <div class="text-center form-sm mt-2">
+                <button class="btn btn-info waves-light" mdbRippleRadius>Sign up
+                  <i class="fa fa-sign-in ml-1"></i>
+                </button>
+              </div>
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-right">
+                <p class="pt-1">Already have an account?
+                  <a href="#" class="blue-text">Log In</a>
+                </p>
+              </div>
+              <button type="button" class="btn btn-outline-info ml-auto" data-dismiss="modal" (click)="loginRegisterForm.hide()" mdbRippleRadius>Close</button>
+            </div>
+          </mdb-tab>
+          <!--/.Panel 8-->
+        </mdb-tabset>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form-->
+<!--Modal: Contact form-->
+<div mdbModal #contactForm="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header light-blue darken-3 white-text">
+        <h4 class="title">
+          <i class="fa fa-pencil"></i> Contact form</h4>
+        <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close" (click)="contactForm.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body mb-0">
+        <div class="md-form form-sm">
+          <i class="fa fa-envelope prefix"></i>
+          <input mdbActive type="text" id="form19" class="form-control">
+          <label for="form19">Your name</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fa fa-lock prefix"></i>
+          <input mdbActive type="password" id="form20" class="form-control">
+          <label for="form20">Your email</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fa fa-tag prefix"></i>
+          <input mdbActive type="text" id="form21" class="form-control">
+          <label for="form21">Subject</label>
+        </div>
+
+        <div class="md-form form-sm">
+          <i class="fa fa-pencil prefix"></i>
+          <textarea mdbActive type="text" id="form8" class="md-textarea mb-0"></textarea>
+          <label for="form8">Your message</label>
+        </div>
+
+        <div class="text-center mt-1-half">
+          <button class="btn btn-info mb-2 waves-light" mdbRippleRadius>Send
+            <i class="fa fa-send ml-1"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Contact form-->
+
+<div mdbModal #fluidDanger="mdb-modal" class="modal fade right" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-full-height modal-right modal-notify modal-danger" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="heading lead">Modal Danger</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="fluidDanger.hide()">
+          <span aria-hidden="true" class="white-text">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <i class="fa fa-times fa-4x mb-3 animated rotateIn"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur
+            in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.</p>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <a type="button" class="btn btn-primary-modal waves-light" mdbRippleRadius>Get it now
+          <i class="fa fa-diamond ml-1"></i>
+        </a>
+        <a type="button" class="btn btn-outline-secondary-modal" data-dismiss="modal" (click)="fluidDanger.hide()" mdbRippleRadius>No, thanks</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div mdbModal #sideInfo="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-info modal-side modal-top-right" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="heading lead">Modal Info</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="sideInfo.hide()">
+          <span aria-hidden="true" class="white-text">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur
+            in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.</p>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <a type="button" class="btn btn-primary-modal waves-light" mdbRippleRadius>Get it now
+          <i class="fa fa-diamond ml-1"></i>
+        </a>
+        <a type="button" class="btn btn-outline-secondary-modal" data-dismiss="modal" (click)="sideInfo.hide()" mdbRippleRadius>No, thanks</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div mdbModal #centralSuccess="mdb-modal" class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-success" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="heading lead">Modal Success</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="centralSuccess.hide()">
+          <span aria-hidden="true" class="white-text">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur
+            in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.</p>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <a type="button" class="btn btn-primary-modal waves-light" mdbRippleRadius>Get it now
+          <i class="fa fa-diamond ml-1"></i>
+        </a>
+        <a type="button" class="btn btn-outline-secondary-modal" data-dismiss="modal" (click)="centralSuccess.hide()" mdbRippleRadius>No, thanks</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div mdbModal #fluidBottom="mdb-modal" class="modal fade bottom" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-success" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="heading lead">Modal Success</p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="centralSuccess.hide()">
+          <span aria-hidden="true" class="white-text">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam blanditiis ad consequatur
+            in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga, enim, ab officiis totam.</p>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <a type="button" class="btn btn-primary-modal waves-light" mdbRippleRadius>Get it now
+          <i class="fa fa-diamond ml-1"></i>
+        </a>
+        <a type="button" class="btn btn-outline-secondary-modal" data-dismiss="modal" (click)="fluidBottom.hide()" mdbRippleRadius>No, thanks</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+
+
+<div class="card card-image mb-3" [ngStyle]="{'background-image': 'url(' + src + ')'}"  [ngClass]="(alignment==='left')?'text-left':(alignment==='right')?'text-right':'text-center'">
+  <div class="text-white d-flex py-5 px-4 {{color}}"
+ >
+      <ng-content></ng-content></div>
+  </div>
