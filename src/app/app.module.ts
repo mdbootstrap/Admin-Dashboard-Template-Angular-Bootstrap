@@ -20,7 +20,7 @@ import { NavigationModule } from './main-layout/navigation/navigation.module';
   ],
   imports: [
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCTZX7XyFg9IX_yhDJJYZd060PwwNkghIw'
+      apiKey: ''
     }),
     BrowserModule,
     BrowserAnimationsModule,
