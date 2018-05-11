@@ -1,16 +1,19 @@
 // free
 import { ModuleWithProviders, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-
-import { ButtonsModule } from './buttons';
-import { RippleModule } from './ripple';
-import { ActiveModule } from './inputs';
-import { NavbarModule } from './navbars';
-import { BsDropdownModule } from './dropdown';
-import { MDBChartsModule } from './charts/';
+import { DeepModule } from './inputs/deep.module';
+import { ButtonsModule } from './buttons/buttons.module';
+import { RippleModule } from './ripple/ripple.module';
+import { ActiveModule } from './inputs/active.module';
+import { InputsModule} from './inputs/inputs.module';
+import { NavbarModule } from './navbars/navbar.module';
+import { DropdownModule } from './dropdown/dropdown.module';
+import { CarouselModule } from './carousel/carousel.module';
+import { ChartsModule } from './charts/chart.module';
 import { CollapseModule } from './collapse';
-import { ModalModule } from './modals';
-import { MDBTooltipModule } from './tooltip';
-import { PopoverModule } from './popover';
+import { ModalModule } from './modals/modal.module';
+import { TooltipModule } from './tooltip/tooltip.module';
+import { PopoverModule } from './popover/popover.module';
+import { WavesModule } from './waves/waves.module';
 
 export {
   ButtonsModule, ButtonRadioDirective, ButtonCheckboxDirective
@@ -19,6 +22,18 @@ export {
 export {
   RippleModule, RippleDirective
 } from './ripple/';
+
+export {
+  WavesModule, WavesDirective
+} from './waves/';
+
+export {
+  DeepModule, DeepDirective
+} from './inputs/';
+
+export {
+  InputsModule, MdbInputDirective
+} from './inputs';
 
 export {
   ActiveModule, ActiveDirective, InputValidateDirective
@@ -30,11 +45,15 @@ export {
 
 export {
   BsDropdownConfig, BsDropdownContainerComponent, BsDropdownDirective, BsDropdownMenuDirective,
-  BsDropdownModule, BsDropdownState, BsDropdownToggleDirective
+  DropdownModule, BsDropdownState, BsDropdownToggleDirective
 } from './dropdown/';
 
 export {
-  MDBChartsModule, BaseChartDirective
+  CarouselComponent, CarouselConfig, CarouselModule
+} from './carousel/';
+
+export {
+  ChartsModule, BaseChartDirective
 } from './charts/';
 
 export {
@@ -47,7 +66,7 @@ export {
 } from './modals/';
 
 export {
-  TooltipConfig, TooltipContainerComponent, TooltipDirective, MDBTooltipModule
+  TooltipConfig, TooltipContainerComponent, TooltipDirective, TooltipModule
 } from './tooltip/';
 
 export {
@@ -57,40 +76,48 @@ export {
 
 
 const MODULES = [
-ButtonsModule,
-RippleModule,
-ActiveModule,
-NavbarModule,
-BsDropdownModule,
-MDBChartsModule,
-CollapseModule,
-ModalModule,
-MDBTooltipModule,
-PopoverModule,
+  DeepModule,
+  ButtonsModule,
+  RippleModule,
+  WavesModule,
+  InputsModule,
+  ActiveModule,
+  NavbarModule,
+  DropdownModule,
+  CarouselModule,
+  ChartsModule,
+  CollapseModule,
+  ModalModule,
+  TooltipModule,
+  PopoverModule,
 ];
 
 @NgModule({
   imports: [
-  ButtonsModule,
-  RippleModule.forRoot(),
-  ActiveModule.forRoot(),
-  NavbarModule,
-  BsDropdownModule.forRoot(),
-  MDBChartsModule,
-  CollapseModule.forRoot(),
-  ModalModule.forRoot(),
-  MDBTooltipModule.forRoot(),
-  PopoverModule.forRoot(),
+    ButtonsModule,
+    DeepModule,
+    RippleModule.forRoot(),
+    WavesModule.forRoot(),
+    InputsModule.forRoot(),
+    ActiveModule.forRoot(),
+    NavbarModule,
+    DropdownModule.forRoot(),
+    CarouselModule.forRoot(),
+    ChartsModule,
+    CollapseModule.forRoot(),
+    ModalModule.forRoot(),
+    TooltipModule.forRoot(),
+    PopoverModule.forRoot(),
   ],
   exports: MODULES,
-  schemas: [ NO_ERRORS_SCHEMA ]
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class MDBRootModule {
 }
 
-@NgModule({exports: MODULES})
+@NgModule({ exports: MODULES })
 export class MDBBootstrapModule {
   public static forRoot(): ModuleWithProviders {
-    return {ngModule: MDBRootModule};
+    return { ngModule: MDBRootModule };
   }
 }

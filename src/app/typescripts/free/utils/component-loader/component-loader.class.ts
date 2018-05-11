@@ -12,20 +12,22 @@ import {
   NgZone,
   Provider,
   ReflectiveInjector,
-  Renderer,
+  Renderer2,
   TemplateRef,
   Type,
   ViewContainerRef
 } from '@angular/core';
-import { PositioningOptions, PositioningService } from '../positioning';
+import { PositioningOptions, PositioningService } from '../positioning/positioning.service';
 import { listenToTriggers } from '../triggers';
 import { ContentRef } from './content-ref.class';
 
 export interface ListenOptions {
   target?: ElementRef;
   triggers?: string;
-  show?: Function;
-  hide?: Function;
+  // show?: Function;
+  show?: Function | any;
+  // hide?: Function;
+  hide?: Function | any;
   toggle?: Function;
 }
 
@@ -36,19 +38,22 @@ export class ComponentLoader<T> {
   public onHidden: EventEmitter<any> = new EventEmitter();
 
   public instance: T;
-  public _componentRef: ComponentRef<T>;
+  // public _componentRef: ComponentRef<T>;
+  public _componentRef: ComponentRef<T> | any;
 
   private _providers: Provider[] = [];
   private _componentFactory: ComponentFactory<T>;
   private _zoneSubscription: any;
-  private _contentRef: ContentRef;
-  private _innerComponent: ComponentRef<T>;
+  // private _contentRef: ContentRef;
+  private _contentRef: ContentRef | any;
+  // private _innerComponent: ComponentRef<T>;
+  private _innerComponent: ComponentRef<T> | any ;
 
   private _unregisterListenersFn: Function;
 
   public get isShown(): boolean {
     return !!this._componentRef;
-  };
+  }
 
     /**
      * Placement of a component. Accepts: "top", "bottom", "left", "right"
@@ -74,7 +79,7 @@ export class ComponentLoader<T> {
      */
      // tslint:disable-next-line
      public constructor(private _viewContainerRef: ViewContainerRef,
-       private _renderer: Renderer,
+       private _renderer: Renderer2,
        private _elementRef: ElementRef,
        private _injector: Injector,
        private _componentFactoryResolver: ComponentFactoryResolver,
@@ -95,7 +100,7 @@ export class ComponentLoader<T> {
        return this;
      }
 
-     public position(opts?: PositioningOptions): ComponentLoader<T> {
+     public position(opts?: PositioningOptions | any): ComponentLoader<T> {
        this.attachment = opts.attachment || this.attachment;
        this._elementRef = opts.target as ElementRef || this._elementRef;
        return this;
@@ -130,7 +135,8 @@ export class ComponentLoader<T> {
          }
 
          if (this.container === 'body' && typeof document !== 'undefined') {
-           document.querySelector(this.container as string)
+          //  document.querySelector(this.container as string)
+          document.querySelector(this.container as string | any)
            .appendChild(this._componentRef.location.nativeElement);
          }
 
@@ -184,7 +190,7 @@ export class ComponentLoader<T> {
          return this;
        }
 
-       public toggle(): void {
+       public toggle(): void | any {
          if (this.isShown) {
            this.hide();
            return;
@@ -230,7 +236,7 @@ export class ComponentLoader<T> {
          return this._innerComponent;
        }
 
-       private _subscribePositioning(): void {
+       private _subscribePositioning(): void | any {
          if (this._zoneSubscription || !this.attachment) {
            return;
          }
@@ -249,7 +255,7 @@ export class ComponentLoader<T> {
          });
        }
 
-       private _unsubscribePositioning(): void {
+       private _unsubscribePositioning(): void | any {
          if (!this._zoneSubscription) {
            return;
          }
@@ -279,6 +285,6 @@ export class ComponentLoader<T> {
            this._applicationRef.attachView(componentRef.hostView);
            return new ContentRef([[componentRef.location.nativeElement]], componentRef.hostView, componentRef);
          }
-         return new ContentRef([[this._renderer.createText(null, `${content}`)]]);
+         return new ContentRef([[this._renderer.createText(`${content}`)]]);
        }
      }

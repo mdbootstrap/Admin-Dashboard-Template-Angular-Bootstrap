@@ -1,10 +1,11 @@
 import {
   Directive, Input, TemplateRef, ViewContainerRef, Output, EventEmitter,
-  Renderer, ElementRef, OnInit, OnDestroy
+  Renderer2, ElementRef, OnInit, OnDestroy
 } from '@angular/core';
 import { TooltipContainerComponent } from './tooltip.component';
 import { TooltipConfig } from './tooltip.service';
-import { ComponentLoaderFactory, ComponentLoader } from '../utils/component-loader';
+import { ComponentLoaderFactory } from '../utils/component-loader/component-loader.factory';
+import { ComponentLoader } from '../utils/component-loader/component-loader.class';
 import { OnChange } from '../utils/decorators';
 
 @Directive({
@@ -68,7 +69,7 @@ export class TooltipDirective implements OnInit, OnDestroy {
    private _tooltip: ComponentLoader<TooltipContainerComponent>;
 
    public constructor(_viewContainerRef: ViewContainerRef,
-     _renderer: Renderer,
+     _renderer: Renderer2,
      _elementRef: ElementRef,
      cis: ComponentLoaderFactory,
      config: TooltipConfig) {

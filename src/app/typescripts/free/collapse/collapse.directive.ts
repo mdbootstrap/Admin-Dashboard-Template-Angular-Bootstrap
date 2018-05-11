@@ -1,15 +1,16 @@
 // todo: add animations when https://github.com/angular/angular/issues/9947 solved
 import {
   Directive, ElementRef, EventEmitter, Input, OnInit, Output,
-  Renderer
+  Renderer2, AfterViewInit
 } from '@angular/core';
+
 
 @Directive({
   selector: '[mdbCollapse]',
   exportAs: 'bs-collapse',
   /* tslint:disable-next-line */
 })
-export class CollapseDirective implements OnInit {
+export class CollapseDirective implements OnInit, AfterViewInit {
 
   @Output('showBsCollapse') public showBsCollapse: EventEmitter<any> = new EventEmitter();
   @Output('shownBsCollapse') public shownBsCollapse: EventEmitter<any> = new EventEmitter();
@@ -45,16 +46,16 @@ export class CollapseDirective implements OnInit {
 
 
   protected _el: ElementRef;
-  protected _renderer: Renderer;
+  protected _renderer: Renderer2;
 
-  public constructor(_el: ElementRef, _renderer: Renderer) {
+  public constructor(_el: ElementRef, _renderer: Renderer2) {
     this._el = _el;
     this._renderer = _renderer;
   }
-
   ngOnInit() {
+
     this._el.nativeElement.classList.add('show');
-    this.maxHeight = this._el.nativeElement.scrollHeight;
+
     this._el.nativeElement.style.transition = this.animationTime + 'ms ease';
 
     if (!this.collapse) {
@@ -67,8 +68,18 @@ export class CollapseDirective implements OnInit {
     this.isExpanded = this.collapse;
   }
 
+  ngAfterViewInit() {
+    this.maxHeight = this._el.nativeElement.scrollHeight;
+  }
+
+  public resize(): void {
+    const container = this._el.nativeElement;
+    this.maxHeight = this._el.nativeElement.scrollHeight;
+    this._renderer.setStyle(container, 'height', this.maxHeight + 'px');
+  }
+
   /** allows to manually toggle content visibility */
-  public toggle(): void {
+  public toggle(event?: any): void {
     if (!this.collapsing) {
       if (this.isExpanded) {
         this.hide();
@@ -76,7 +87,15 @@ export class CollapseDirective implements OnInit {
         this.show();
       }
     }
+    try {
+      if (event.type === 'click') {
+        this.maxHeight = event.target.parentElement.nextElementSibling.scrollHeight;
+      } else if (event.type === 'mouseenter' || event.type === 'mouseleave') {
+        this.maxHeight = event.target.nextElementSibling.scrollHeight;
+      }
+    } catch (error) { }
   }
+
 
   /** allows to manually hide content */
   public hide(): void {
@@ -94,7 +113,7 @@ export class CollapseDirective implements OnInit {
     container.classList.remove('show');
     container.classList.add('collapsing');
 
-    this._renderer.setElementStyle(container, 'height', '0px');
+    this._renderer.setStyle(container, 'height', '0px');
 
     setTimeout(() => {
       container.classList.remove('collapsing');
@@ -122,7 +141,7 @@ export class CollapseDirective implements OnInit {
       container.classList.add('collapsing');
 
       setTimeout(() => {
-        this._renderer.setElementStyle(container, 'height', this.maxHeight + 'px');
+        this._renderer.setStyle(container, 'height', this.maxHeight + 'px');
       }, 10);
 
       setTimeout(() => {

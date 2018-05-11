@@ -1,8 +1,7 @@
 //input disabled
 .disabled {
-    cursor: not-allowed!important;
+	cursor: not-allowed !important;
 }
-
 
 //input counter
 .counter-danger {
@@ -10,45 +9,45 @@
 	box-shadow: 0 1px 0 0 #F44336 !important;
 }
 
-input:focus ~ .chars {
+input:focus~.chars {
 	float: right;
-    clear: both;
-    display: block;
+	clear: both;
+	display: block;
 }
 
-textarea:focus ~ .chars {
+textarea:focus~.chars {
 	float: right;
-    clear: both;
-    display: block;
+	clear: both;
+	display: block;
 }
-
 
 //active styles for input label
 .md-form label.active {
-    color: #757575;
+	color: #757575;
+	transform: translateY(-120%);
+	-webkit-transform: translateY(-120%);
 }
 
-
 //inputs validation
-.counter-success{
+.counter-success {
 	border-bottom: 1px solid $input-success-color !important;
-  	box-shadow: 0 1px 0 0 $input-success-color !important;
+	box-shadow: 0 1px 0 0 $input-success-color !important;
 }
 
 .inputVal {
 	font-size: .8rem;
 	position: absolute;
-	top: 60px;
+	top: 40px;
 }
 
-.md-form .prefix ~ .inputVal{
-	margin-left: 3rem;
+.md-form .prefix~.inputVal {
+	margin-left: 2.5rem;
 }
 
-input.counter-danger ~ span.text-danger {
+input.counter-danger~span.text-danger {
 	visibility: visible !important;
 }
 
-input.counter-success ~ span.text-success {
+input.counter-success~span.text-success {
 	visibility: visible !important;
 }

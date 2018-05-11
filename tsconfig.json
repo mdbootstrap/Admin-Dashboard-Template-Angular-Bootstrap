@@ -5,6 +5,8 @@
     "baseUrl": "src",
     "sourceMap": true,
     "declaration": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,

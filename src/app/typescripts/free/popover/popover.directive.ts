@@ -1,7 +1,8 @@
-import { Directive, Input, Output, EventEmitter, OnInit, OnDestroy, Renderer, ElementRef, TemplateRef,
+import { Directive, Input, Output, EventEmitter, OnInit, OnDestroy, Renderer2, ElementRef, TemplateRef,
   ViewContainerRef } from '@angular/core';
   import { PopoverConfig } from './popover.config';
-  import { ComponentLoaderFactory, ComponentLoader } from '../utils/component-loader';
+  import { ComponentLoaderFactory } from '../utils/component-loader/component-loader.factory';
+  import { ComponentLoader } from '../utils/component-loader/component-loader.class';
   import { PopoverContainerComponent } from './popover-container.component';
 
 /**
@@ -54,7 +55,7 @@ import { Directive, Input, Output, EventEmitter, OnInit, OnDestroy, Renderer, El
    private _popover: ComponentLoader<PopoverContainerComponent>;
 
    public constructor(_elementRef: ElementRef,
-     _renderer: Renderer,
+     _renderer: Renderer2,
      _viewContainerRef: ViewContainerRef,
      _config: PopoverConfig,
      cis: ComponentLoaderFactory) {
@@ -70,7 +71,7 @@ import { Directive, Input, Output, EventEmitter, OnInit, OnDestroy, Renderer, El
    * Opens an element’s popover. This is considered a “manual” triggering of
    * the popover.
    */
-   public show(): void {
+   public show(): void | any {
      if (this._popover.isShown) {
        return;
      }

@@ -1,7 +1,7 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { ComponentLoaderFactory } from '../utils/component-loader/index';
+import { ComponentLoaderFactory } from '../utils/component-loader/component-loader.factory';
 
-import { PositioningService } from '../utils/positioning/index';
+import { PositioningService } from '../utils/positioning/positioning.service';
 import { BsDropdownContainerComponent } from './dropdown-container.component';
 import { BsDropdownMenuDirective } from './dropdown-menu.directive';
 import { BsDropdownToggleDirective } from './dropdown-toggle.directive';
@@ -24,10 +24,10 @@ import { BsDropdownState } from './dropdown.state';
   ],
   entryComponents: [BsDropdownContainerComponent]
 })
-export class BsDropdownModule {
+export class DropdownModule {
   public static forRoot(config?: any): ModuleWithProviders {
     return {
-      ngModule: BsDropdownModule, providers: [
+      ngModule: DropdownModule, providers: [
       ComponentLoaderFactory,
       PositioningService,
       BsDropdownState,

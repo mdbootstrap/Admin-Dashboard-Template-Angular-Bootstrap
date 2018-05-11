@@ -4,4 +4,4 @@ export { BsDropdownToggleDirective } from './dropdown-toggle.directive';
 export { BsDropdownContainerComponent } from './dropdown-container.component';
 export { BsDropdownState } from './dropdown.state';
 export { BsDropdownConfig } from './dropdown.config';
-export { BsDropdownModule } from './dropdown.module';
+export { DropdownModule } from './dropdown.module';

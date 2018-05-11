@@ -11,5 +11,5 @@ import { BaseChartDirective } from './chart.directive';
   ],
   imports: []
 })
-export class MDBChartsModule {
+export class ChartsModule {
 }
