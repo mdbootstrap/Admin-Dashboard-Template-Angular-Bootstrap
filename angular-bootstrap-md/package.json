@@ -1,0 +1,44 @@
+{
+  "_from": "file:angular-bootstrap-md-6.1.0.tgz",
+  "_id": "angular-bootstrap-md@6.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-0pFwPQA4uZndQ3+2BaUZNh6wRthmKPV4M9Upp4BhWDs09sZ/zTqiNYB2POwyk2eUMWy7zNrspEAJzzPWrnGVpQ==",
+  "_location": "/angular-bootstrap-md",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "file",
+    "where": "/home/sf/Desktop/Developerka/610/mdb-angular-free-6.0.2",
+    "raw": "angular-bootstrap-md-6.1.0.tgz",
+    "rawSpec": "angular-bootstrap-md-6.1.0.tgz",
+    "saveSpec": "file:angular-bootstrap-md-6.1.0.tgz",
+    "fetchSpec": "/home/sf/Desktop/Developerka/610/mdb-angular-free-6.0.2/angular-bootstrap-md-6.1.0.tgz"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "/home/sf/Desktop/Developerka/610/mdb-angular-free-6.0.2/angular-bootstrap-md-6.1.0.tgz",
+  "_spec": "angular-bootstrap-md-6.1.0.tgz",
+  "_where": "/home/sf/Desktop/Developerka/610/mdb-angular-free-6.0.2",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "es2015": "./esm2015/angular-bootstrap-md.js",
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "main": "./bundles/angular-bootstrap-md.umd.js",
+  "module": "./esm5/angular-bootstrap-md.es5.js",
+  "name": "angular-bootstrap-md",
+  "peerDependencies": {
+    "@angular/core": "^5.0.0",
+    "@angular/common": "^5.0.0",
+    "@angular/http": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "url"
+  },
+  "typings": "./angular-bootstrap-md.d.ts",
+  "version": "6.1.0"
+}

@@ -1,5 +1,5 @@
 import { ModalComponent } from './components/modal/modal.component';
-import { MDBBootstrapModule } from './../typescripts/free/index';
+import { MDBBootstrapModule } from './../../../angular-bootstrap-md';
 import { NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CascadingPanelComponent } from './components/cascading-panel/cascading-panel.component';
