@@ -11,7 +11,7 @@ ________
 
 # Most important features:
 
-1. Build upon Bootstrap 4 & Angular 5 & MDB
+1. Build upon Bootstrap 4 & Angular 6 & MDB
 
 2. Plenty of useful components
 
