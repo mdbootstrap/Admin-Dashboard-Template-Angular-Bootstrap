@@ -1,3 +1,18 @@
+
+6.1.3
+*** New Features: ***
+    * Icons are now component. <mdb-icon> supports only Font Awesome icons. Available field: icon (icon class), size (icon size), class (custom class for example color),
+    * Number input now listens for key events. Added functionality to increment / decrement it's value by 10 or 0.1 by using shift + up / down arrow or alt + up / down arrow keys. Available by using mdbInputDirective.
+
+
+*** Fixes: ***
+    * Fixed problems with Carousel when using Angular Universal,
+    * mdbInputDirective validation has ben rewritten. Now works with Angular Validators,
+    * Fixed problem with no backdrop in sidenav on mobile,
+    * Fixed problem with sidenavBreakpoint
+
+
+
 6.1.2
 *** Admin Templates: ***
 We have provided users with the option to make their own changes to the source code and compile the library into JavaScript.
