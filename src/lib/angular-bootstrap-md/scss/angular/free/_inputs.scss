@@ -37,11 +37,15 @@ textarea:focus~.chars {
 .inputVal {
 	font-size: .8rem;
 	position: absolute;
-	top: 40px;
 }
 
+
 .md-form .prefix~.inputVal {
-	margin-left: 2.5rem;
+	left: 2.5rem;
+}
+
+.modal-content .md-form .prefix~.inputVal {
+	left: 2.0rem !important;
 }
 
 input.counter-danger~span.text-danger {
@@ -50,4 +54,8 @@ input.counter-danger~span.text-danger {
 
 input.counter-success~span.text-success {
 	visibility: visible !important;
+}
+
+.md-form textarea.md-textarea {
+	overflow-y: auto !important;
 }

@@ -22,8 +22,6 @@
             ],
             "styles": [
               "node_modules/font-awesome/scss/font-awesome.scss",
-              "scss/bootstrap/bootstrap.scss",
-              "scss/mdb-free.scss",
               "src/styles.scss",
               "node_modules/angular-calendar/scss/angular-calendar.scss"
             ],

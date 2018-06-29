@@ -1,10 +1,10 @@
-[![Angular-Bootstrap-with-Material-Design](https://mdbootstrap.com/img/Mockups/MDB-post/angular-about5.jpg)](https://mdbootstrap.com/angular/)
+[![Angular-Bootstrap-with-Material-Design](https://mdbootstrap.com/img/Marketing/free/main/angular/mdb-angular-free.jpg)](https://mdbootstrap.com/angular/)
 
 # Angular Bootstrap with Material Design
 
 [![npm version](https://badge.fury.io/js/angular-bootstrap-md.svg)](https://badge.fury.io/js/angular-bootstrap-md)
 
-Built with Angular 5, Bootstrap 4 and TypeScript. CLI version available. Absolutely no jQuery.
+Built with Angular 6, Bootstrap 4 and TypeScript. CLI version available. Absolutely no jQuery.
 
 400+ material UI elements, 600+ material icons, 74 CSS animations, TypeScript modules, SASS files and many more.
 
@@ -30,6 +30,27 @@ note "." at the end. It will clone files directly into current folder.
 - Voilà! Open browser and visit http://localhost:4200 
 
 Now you can navigate to our documentation (http://mdbootstrap.com/angular/), pick any component and place within your project.
+
+# Available commands
+
+* npm run build:lib - building library,
+* npm run pack - copying assets and packaging /dist directory into .tgz archive
+* npm run version - adjusting src/package.json version from main package.json file,
+* npm run compile - Executing above commands with correct sequence.
+
+# Modules list
+
+* ButtonsModule,
+* CarouselModule,
+* ChartsModule,
+* CollapseModule,
+* InputsModule,
+* ModalModule,
+* NavbarModule,
+* PopoverModule,
+* TooltipModule,
+* WavesModule,
+* MDBBootstrapModule - contains every MDB modules.
 
 # How to install MDB via npm:
 - create new project `ng new project_name --style=scss`
