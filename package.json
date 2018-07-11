@@ -17,10 +17,9 @@
     "version": "sync-json -v --property version --source package.json src/package.json"
   },
   "dependencies": {
-    "@agm/core": "~1.0.0-beta.2",
+    "@agm/core": "~1.0.0-beta.3",
     "@angular/animations": "^6.0.0",
     "@angular/common": "^6.0.0",
-    "@angular/compiler": "^6.0.0",
     "@angular/core": "^6.0.0",
     "@angular/forms": "^6.0.0",
     "@angular/http": "^6.0.0",
@@ -28,7 +27,7 @@
     "@angular/platform-browser-dynamic": "^6.0.0",
     "@angular/router": "^6.0.0",
     "angular-bootstrap-md": "file:angular-bootstrap-md-6.1.2.tgz",
-    "angular-calendar": "^0.21.3",
+    "angular-calendar": "^0.25.2",
     "chart.js": "2.5.x",
     "classlist.js": "1.1.x",
     "core-js": "2.4.x",
@@ -36,7 +35,7 @@
     "font-awesome": "4.7.x",
     "fs-extra": "^6.0.1",
     "hammerjs": "2.0.x",
-    "node-sass": "4.7.2",
+    "node-sass": "^4.9.2",
     "rxjs": "^6.0.0",
     "screenfull": "3.3.x",
     "smoothscroll-polyfill": "0.3.x",
@@ -44,6 +43,7 @@
     "zone.js": "0.8.x"
   },
   "devDependencies": {
+    "@angular/compiler": "^6.0.0",
     "@angular-devkit/build-angular": "~0.6.1",
     "@angular/cli": "^6.0.0",
     "@angular/compiler-cli": "^6.0.0",
