@@ -1,9 +1,11 @@
+
 // todo: add animations when https://github.com/angular/angular/issues/9947 solved
 import {
   Directive, ElementRef, EventEmitter, Input, OnInit, Output,
-  Renderer2, AfterViewInit
+  Renderer2, AfterViewInit, Inject, PLATFORM_ID
 } from '@angular/core';
-
+import { DOCUMENT } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 
 @Directive({
   selector: '[mdbCollapse]',
@@ -47,8 +49,12 @@ export class CollapseDirective implements OnInit, AfterViewInit {
 
   protected _el: ElementRef;
   protected _renderer: Renderer2;
-
-  public constructor(_el: ElementRef, _renderer: Renderer2) {
+  isBrowser: any = false;
+  public constructor(_el: ElementRef,
+    _renderer: Renderer2,
+    @Inject(DOCUMENT) private document: any,
+    @Inject(PLATFORM_ID) platformId: string) {
+    this.isBrowser = isPlatformBrowser(platformId);
     this._el = _el;
     this._renderer = _renderer;
   }
@@ -88,10 +94,23 @@ export class CollapseDirective implements OnInit, AfterViewInit {
       }
     }
     try {
-      if (event.type === 'click') {
-        this.maxHeight = event.target.parentElement.nextElementSibling.scrollHeight;
-      } else if (event.type === 'mouseenter' || event.type === 'mouseleave') {
-        this.maxHeight = event.target.nextElementSibling.scrollHeight;
+      if (this.isBrowser) {
+        const fixedButtonContainer: any = this.document.querySelector('.fixed-action-btn');
+        const fixedCollapseContainer: any = this.document.querySelector('.fixed_collapse');
+        if (event.type === 'click') {
+          // If fixedButtonContainer got top style instead of bottom, remove bottom styles from this._el.nativeElement - needed in cases,
+          // when menu should be slided from the button instead of from the bottom edge of the screen.
+          if (fixedButtonContainer.style.top !== '' && window.innerHeight - event.clientY > this.maxHeight) {
+            this._renderer.setStyle(this._el.nativeElement, 'bottom', 'unset');
+          }
+          this.maxHeight = fixedCollapseContainer.scrollHeight;
+        } else if (event.type === 'mouseenter' || event.type === 'mouseleave') {
+          // Same as in 103 line.
+          if (fixedButtonContainer.style.top !== '' && window.innerHeight - event.clientY > this.maxHeight) {
+            this._renderer.setStyle(this._el.nativeElement, 'bottom', 'unset');
+          }
+          this.maxHeight = fixedCollapseContainer.scrollHeight;
+        }
       }
     } catch (error) { }
   }
@@ -100,7 +119,7 @@ export class CollapseDirective implements OnInit, AfterViewInit {
   /** allows to manually hide content */
   public hide(): void {
     this.collapsing = true;
-    this.hideBsCollapse.emit();
+    this.hideBsCollapse.emit(this);
     this.isCollapse = false;
     this.isCollapsing = true;
 
@@ -118,7 +137,7 @@ export class CollapseDirective implements OnInit, AfterViewInit {
     setTimeout(() => {
       container.classList.remove('collapsing');
       container.classList.add('collapse');
-      this.hiddenBsCollapse.emit();
+      this.hiddenBsCollapse.emit(this);
       this.collapsing = false;
     }, this.animationTime);
     this.collapsed.emit(this);
@@ -128,7 +147,7 @@ export class CollapseDirective implements OnInit, AfterViewInit {
   public show(): void {
     if (!this.isExpanded) {
       this.collapsing = true;
-      this.showBsCollapse.emit();
+      this.showBsCollapse.emit(this);
       this.isCollapse = false;
       this.isCollapsing = true;
 
@@ -148,7 +167,7 @@ export class CollapseDirective implements OnInit, AfterViewInit {
         container.classList.remove('collapsing');
         container.classList.add('collapse');
         container.classList.add('show');
-        this.shownBsCollapse.emit();
+        this.shownBsCollapse.emit(this);
         this.collapsing = false;
       }, this.animationTime - (this.animationTime * 0.5));
       this.expanded.emit(this);
