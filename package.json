@@ -1,6 +1,6 @@
 {
   "name": "ng-admin-theme",
-  "version": "6.2.3",
+  "version": "6.2.4",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -26,8 +26,8 @@
     "@angular/platform-browser": "^6.0.0",
     "@angular/platform-browser-dynamic": "^6.0.0",
     "@angular/router": "^6.0.0",
-    "angular-bootstrap-md": "file:angular-bootstrap-md-6.2.3.tgz",
     "angular-calendar": "^0.25.2",
+    "angular-bootstrap-md": "file:angular-bootstrap-md-6.2.4.tgz",
     "chart.js": "2.5.x",
     "classlist.js": "1.1.x",
     "core-js": "2.4.x",
