@@ -112,7 +112,7 @@ http://mdbootstrap.com/angular/getting-started/
 
 # PRO version:
 
-**Angular Bootstrap with Material Design PRO (from $79)**: https://mdbootstrap.com/product/angular-bootstrap-pro/  
+**Angular Bootstrap with Material Design PRO (from $79)**: https://mdbootstrap.com/products/angular-ui-kit/
 
 ## Documentation:
 **Huge, detailed documentation avilable online on**: http://mdbootstrap.com/angular/

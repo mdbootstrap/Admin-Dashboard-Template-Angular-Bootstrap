@@ -67,7 +67,7 @@ http://mdbootstrap.com/forums/forum/support/
 
 # PRO version:
 
-**MDB Admin Template Pro (Angular version)**: https://mdbootstrap.com/product/angular-admin-theme/
+**MDB Admin Template Pro (Angular version)**: https://mdbootstrap.com/products/angular-admin-dashboard/
 
 # Highlights:  
 **Bootstrap 4**  
