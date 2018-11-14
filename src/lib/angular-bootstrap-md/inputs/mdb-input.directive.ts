@@ -280,15 +280,17 @@ export class MdbInputDirective implements AfterViewChecked, OnInit, AfterViewIni
   }
 
   resize() {
-      if (this.el.nativeElement.classList.contains('md-textarea-auto')) {
-        this._renderer.setStyle(this.el.nativeElement, 'height', 'auto');
-        this._renderer.setStyle(this.el.nativeElement, 'height', this.el.nativeElement.scrollHeight + 'px');
-      }
+    if (this.el.nativeElement.classList.contains('md-textarea-auto')) {
+      this._renderer.setStyle(this.el.nativeElement, 'height', 'auto');
+      this._renderer.setStyle(this.el.nativeElement, 'height', this.el.nativeElement.scrollHeight + 'px');
+    }
 
   }
 
   delayedResize() {
-    setTimeout(this.resize(), 0);
+    setTimeout(() => {
+      this.resize();
+    }, 0);
   }
 
   public initComponent(): void {

@@ -6,8 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AgmCoreModule } from '@agm/core';
 
-import { CalendarModule } from 'angular-calendar';
-
+import { CalendarModule,  } from 'angular-calendar';
 import { SharedModule } from '../shared/shared.module';
 
 import { FooterComponent } from '../main-layout/footer/footer.component';
