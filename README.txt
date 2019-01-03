@@ -1,6 +1,6 @@
 Material Design for Bootstrap - Angular Admin Dashboard
 
-Version: MDB - Angular Admin Dashboard 7.1.1
+Version: MDB - Angular Admin Dashboard 7.2.0
 
 Documentation:
 http://mdbootstrap.com/angular/
