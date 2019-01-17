@@ -11,7 +11,7 @@ ________
 
 # Most important features:
 
-1. Build upon Bootstrap 4 & Angular 6 & MDB
+1. Build upon Bootstrap 4 & Angular 7 & MDB
 
 2. Plenty of useful components
 
@@ -52,7 +52,7 @@ http://mdbootstrap.com/angular/faq/
 http://mdbootstrap.com/forums/forum/support/
 
 
-# Angular 5 tutorial – creating an Angular Bootstrap app, step by step:
+# Angular 7 tutorial – creating an Angular Bootstrap app, step by step:
 ## https://mdbootstrap.com/angular/angular-tutorial/
 
 # Additional tutorials:
@@ -89,7 +89,7 @@ Our society grows day by day. Visit **our forum** and check how it is to be a pa
 MDB fully suppports Flex Box. You can forget about alignment issues.  
 
 **Latest Angular**  
-MDB is integrated with newest Angular 5, therefore you can use all the newest features which comes along with it.  
+MDB is integrated with newest Angular 7, therefore you can use all the newest features which comes along with it.  
 
 **Detailed documentation:**  
 We give you detailed documentation at your disposal. It will help you to implement your ideas easily.  
