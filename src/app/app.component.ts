@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'mdb-root',
+  selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css']
 
