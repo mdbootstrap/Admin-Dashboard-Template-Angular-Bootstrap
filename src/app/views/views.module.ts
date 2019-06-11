@@ -6,7 +6,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AgmCoreModule } from '@agm/core';
 
-import { CalendarModule,  } from 'angular-calendar';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { SharedModule } from '../shared/shared.module';
 
 import { FooterComponent } from '../main-layout/footer/footer.component';
@@ -32,7 +33,10 @@ import { HelpComponent } from './help/help.component';
       // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
       apiKey: ''
     }),
-    CalendarModule.forRoot()
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory
+    })
   ],
   declarations: [
     FooterComponent,
@@ -52,7 +56,7 @@ import { HelpComponent } from './help/help.component';
     ModalsComponent,
     Map1Component,
     StatsCardComponent,
-    StatsCard2Component,    
+    StatsCard2Component,
     Dashboard1Component
   ],
   schemas: [NO_ERRORS_SCHEMA]
