@@ -7,7 +7,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
-  @ViewChild('sidenav') sidenav: ElementRef;
+  @ViewChild('sidenav', {static: true}) sidenav: ElementRef;
 
   clicked: boolean;
 

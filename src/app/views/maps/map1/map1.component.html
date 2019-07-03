@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-6">
         <!--Card-->
-        <div class="card card-cascade narrower mt-5">
+        <mdb-card cascade="true" narrower="true" class="mt-5">
 
             <!--Card image-->
             <div class="view gradient-card-header blue darken-2 ">
@@ -10,19 +10,19 @@
             <!--/Card image-->
 
             <!--Card content-->
-            <div class="card-body text-center">
+            <mdb-card-body class="text-center">
                 <agm-map [latitude]="map.lat" [longitude]="map.lng" [mapTypeId]="'roadmap'" style="height: 300px">
                     <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
                 </agm-map>
 
-            </div>
+            </mdb-card-body>
             <!--/.Card content-->
-        </div>
+        </mdb-card>
         <!--/.Card-->
     </div>
     <div class="col-md-6">
         <!--Card-->
-        <div class="card card-cascade narrower mt-5">
+        <mdb-card cascade="true" narrower="true" class="mt-5">
 
             <!--Card image-->
             <div class="view gradient-card-header  blue darken-2">
@@ -31,21 +31,21 @@
             <!--/Card image-->
 
             <!--Card content-->
-            <div class="card-body text-center">
+            <mdb-card-body class="text-center">
                 <agm-map [latitude]="map.lat" [longitude]="map.lng" [mapTypeId]="'hybrid'" style="height: 300px">
                     <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
                 </agm-map>
 
-            </div>
+            </mdb-card-body>
             <!--/.Card content-->
-        </div>
+        </mdb-card>
         <!--/.Card-->
     </div>
 </div>
 <div class="row">
     <div class="col-md-6">
         <!--Card-->
-        <div class="card card-cascade narrower mt-5">
+        <mdb-card cascade="true" narrower="true" class="mt-5">
 
             <!--Card image-->
             <div class="view gradient-card-header  blue darken-2">
@@ -54,19 +54,19 @@
             <!--/Card image-->
 
             <!--Card content-->
-            <div class="card-body text-center">
+            <mdb-card-body class="text-center">
                 <agm-map [latitude]="map.lat" [longitude]="map.lng" [mapTypeId]="'satellite'" style="height: 300px">
                     <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
                 </agm-map>
 
-            </div>
+            </mdb-card-body>
             <!--/.Card content-->
-        </div>
+        </mdb-card>
         <!--/.Card-->
     </div>
     <div class="col-md-6">
         <!--Card-->
-        <div class="card card-cascade narrower mt-5">
+        <mdb-card cascade="true" narrower="true" class="mt-5">
 
             <!--Card image-->
             <div class="view gradient-card-header  blue darken-2">
@@ -75,14 +75,14 @@
             <!--/Card image-->
 
             <!--Card content-->
-            <div class="card-body text-center">
+            <mdb-card-body class="text-center">
                 <agm-map [latitude]="map.lat" [longitude]="map.lng" [mapTypeId]="'terrain'" style="height: 300px">
                     <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
                 </agm-map>
 
-            </div>
+            </mdb-card-body>
             <!--/.Card content-->
-        </div>
+        </mdb-card>
         <!--/.Card-->
     </div>
 </div>
@@ -92,7 +92,8 @@
         <section class="pb-4 pt-5">
             <panel header="Full documentation" color="primary-color">
                 <p class="card-text">Read the full documentation for these components.</p>
-                <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" class="btn btn-primary waves-effect waves-light">Learn more</a>
+                <a href="https://mdbootstrap.com/angular/components/maps/" target="_blank" mdbBtn color="primary"
+                   class="waves-effect waves-light">Learn more</a>
             </panel>
         </section>
         <!--/.Section: Docs link-->

@@ -3,11 +3,12 @@
 
 
         <!--Card-->
-        <div class="card card-cascade narrower">
+        <mdb-card cascade="true" narrower="true">
 
             <!--Card image-->
             <div class="view overlay hm-white-slight waves-light" mdbWavesEffect>
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20%283%29.jpg" class="img-fluid">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20%283%29.jpg"
+                     class="img-fluid">
                 <a>
                     <div class="mask"></div>
                 </a>
@@ -15,23 +16,26 @@
             <!--/Card image-->
 
             <!--Card content-->
-            <div class="card-body text-center">
+            <mdb-card-body class="text-center">
                 <!--Title-->
                 <h4 class="card-title font-bold mb-2"><strong>Alice Mayer</strong></h4>
                 <h5 class="indigo-text"><strong>Photographer</strong></h5>
 
                 <h6 class='text-justify'><strong>About:</strong></h6>
-                <p class='text-justify'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione perferendis quod animi dignissimos consectetur
+                <p class='text-justify'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione perferendis
+                    quod animi dignissimos consectetur
                     quibusdam numquam laboriosam, minus, provident...</p>
 
                 <div class="text-right">
-                    <button type="button" class="btn btn-outline-primary btn-rounded  btn-sm" mdbWavesEffect>More...</button>
+                    <button type="button" mdbBtn outline="true" color="primary" rounded="true" size="sm" mdbWavesEffect>
+                        More...
+                    </button>
                 </div>
 
-            </div>
+            </mdb-card-body>
             <!--/.Card content-->
 
-        </div>
+        </mdb-card>
         <!--/.Card-->
 
     </div>
@@ -50,71 +54,78 @@
 
                 <!--Grid column-->
                 <div class="col-lg-6 col-xl-5 mb-3">
-                    
-                                        <!--Card-->
-                                        <div class="card card-cascade narrower d-flex mb-5">
-                    
-                                            <!--Card image-->
-                                            <div class="view overlay hm-white-slight">
-                                                <img src="https://mdbootstrap.com/img/Mockups/Horizontal/6-col/pro-profile-page.jpg" class="img-fluid" alt="">
-                                                <a href="#">
-                                                    <div class="mask"></div>
-                                                </a>
-                                            </div>
-                    
-                                            <!--Card content-->
-                                            <div class="card-body">
-                                                <!--Title-->
-                                                <h4 class="card-title font-bold mb-3"><strong>Project name</strong></h4>
-                                                <!--Text-->
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                                </p>
-                                            </div>
-                    
-                                            <!--Card footer-->
-                                            <div class="card-footer links-light">
-                                                <span class="right"> 
-                                                    <a href="" class="waves-effect p-2">Live Preview <mdb-icon fas icon="camera" class="ml-1"></mdb-icon></a>
-                                                </span>
-                                            </div>
-                    
-                                        </div>
-                                        <!--/.Card-->
-                    
-                                    </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-6 col-xl-5 mb-3">
 
                     <!--Card-->
-                    <div class="card card-cascade narrower d-flex mb-5">
+                    <mdb-card cascade="true" narrower="true" class="d-flex mb-5">
 
                         <!--Card image-->
                         <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Mockups/Horizontal/6-col/pro-signup.jpg" class="img-fluid" alt="">
+                            <img src="https://mdbootstrap.com/img/Mockups/Horizontal/6-col/pro-profile-page.jpg"
+                                 class="img-fluid" alt="">
                             <a href="#">
                                 <div class="mask"></div>
                             </a>
                         </div>
 
                         <!--Card content-->
-                        <div class="card-body">
+                        <mdb-card-body>
                             <!--Title-->
                             <h4 class="card-title font-bold mb-3"><strong>Project name</strong></h4>
                             <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.
                             </p>
+                        </mdb-card-body>
+
+                        <!--Card footer-->
+                        <div class="card-footer links-light">
+                            <span class="right">
+                                <a href=""
+                                   class="waves-effect p-2">Live Preview
+                                    <mdb-icon fas icon="camera" class="ml-1"></mdb-icon></a>
+                            </span>
                         </div>
+
+                    </mdb-card>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-6 col-xl-5 mb-3">
+
+                    <!--Card-->
+                    <mdb-card cascade="true" narrower="true" class="d-flex mb-5">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="https://mdbootstrap.com/img/Mockups/Horizontal/6-col/pro-signup.jpg"
+                                 class="img-fluid" alt="">
+                            <a href="#">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <mdb-card-body>
+                            <!--Title-->
+                            <h4 class="card-title font-bold mb-3"><strong>Project name</strong></h4>
+                            <!--Text-->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.
+                            </p>
+                        </mdb-card-body>
 
                         <!--Card footer-->
                         <div class="card-footer links-light">
                             <span class="right"> 
-                                <a href="" class="waves-effect p-2">Live Preview <mdb-icon fas icon="camera" class="ml-1"></mdb-icon></a>
+                                <a href="" class="waves-effect p-2">Live Preview
+                                    <mdb-icon fas icon="camera" class="ml-1"></mdb-icon></a>
                             </span>
                         </div>
 
-                    </div>
+                    </mdb-card>
                     <!--/.Card-->
 
                 </div>
@@ -130,33 +141,36 @@
                 <div class="col-lg-6 col-xl-5 mb-3">
 
                     <!--Card-->
-                    <div class="card card-cascade narrower d-flex mb-5">
+                    <mdb-card cascade="true" narrower="true" class="d-flex mb-5">
 
                         <!--Card image-->
                         <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Mockups/Horizontal/6-col/pro-pricing.jpg" class="img-fluid" alt="">
+                            <img src="https://mdbootstrap.com/img/Mockups/Horizontal/6-col/pro-pricing.jpg"
+                                 class="img-fluid" alt="">
                             <a href="#">
                                 <div class="mask"></div>
                             </a>
                         </div>
 
                         <!--Card content-->
-                        <div class="card-body">
+                        <mdb-card-body>
                             <!--Title-->
                             <h4 class="card-title font-bold mb-3"><strong>Project name</strong></h4>
                             <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.
                             </p>
-                        </div>
+                        </mdb-card-body>
 
                         <!--Card footer-->
                         <div class="card-footer links-light">
                             <span class="right"> 
-                                <a href="" class="waves-effect p-2">Live Preview <mdb-icon fas icon="camera" class="ml-1"></mdb-icon></a>
+                                <a href="" class="waves-effect p-2">Live Preview
+                                    <mdb-icon fas icon="camera" class="ml-1"></mdb-icon></a>
                             </span>
                         </div>
 
-                    </div>
+                    </mdb-card>
                     <!--/.Card-->
 
                 </div>
@@ -166,34 +180,37 @@
                 <div class="col-lg-6 col-xl-5 mb-3">
 
                     <!--Card-->
-                    <div class="card card-cascade narrower d-flex mb-5">
+                    <mdb-card cascade="true" narrower="true" class="d-flex mb-5">
 
                         <!--Card image-->
                         <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Mockups/Horizontal/6-col/pro-landing.jpg" class="img-fluid" alt="">
+                            <img src="https://mdbootstrap.com/img/Mockups/Horizontal/6-col/pro-landing.jpg"
+                                 class="img-fluid" alt="">
                             <a href="#">
                                 <div class="mask"></div>
                             </a>
                         </div>
 
                         <!--Card content-->
-                        <div class="card-body">
+                        <mdb-card-body>
                             <!--Title-->
                             <h4 class="card-title font-bold mb-3"><strong>Project name</strong></h4>
                             <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.
                             </p>
-                           
-                        </div>
+
+                        </mdb-card-body>
 
                         <!--Card footer-->
                         <div class="card-footer links-light">
                             <span class="right"> 
-                                <a href="" class="waves-effect p-2">Live Preview <mdb-icon fas icon="camera" class="ml-1"></mdb-icon></a>
+                                <a href="" class="waves-effect p-2">Live Preview
+                                    <mdb-icon fas icon="camera" class="ml-1"></mdb-icon></a>
                             </span>
                         </div>
 
-                    </div>
+                    </mdb-card>
                     <!--/.Card-->
 
                 </div>
