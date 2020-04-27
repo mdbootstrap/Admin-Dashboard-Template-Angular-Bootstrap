@@ -1,6 +1,6 @@
 {
   "name": "ng-admin-free",
-  "version": "9.1.0",
+  "version": "9.2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -26,7 +26,7 @@
     "core-js": "^2.5.4",
     "rxjs": "~6.5.2",
     "zone.js": "~0.10.2",
-    "angular-bootstrap-md": "file:angular-bootstrap-md-9.1.0.tgz"
+    "angular-bootstrap-md": "file:angular-bootstrap-md-9.2.0.tgz"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.4",
