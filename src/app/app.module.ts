@@ -59,7 +59,7 @@ const routes: Route[] = [
     BrowserModule,
     BrowserAnimationsModule,
     NavigationModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }),
     FormsModule,
     SharedModule,
     ViewsModule,

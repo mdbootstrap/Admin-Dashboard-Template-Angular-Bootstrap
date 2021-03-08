@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { Map1Component } from './map1.component';
@@ -7,7 +7,7 @@ describe('Map1Component', () => {
   let component: Map1Component;
   let fixture: ComponentFixture<Map1Component>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ Map1Component ],
       schemas: [
