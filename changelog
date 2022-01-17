@@ -1,3 +1,21 @@
+12.2.0
+In version 12.2.0 we updated Bootstrap to v4.6.1 and added some fixes and new features for the existing components. Check what changed below:
+
+**Dependencies:**
+
+* Updated Bootstrap styles to version 4.6.1
+
+**Fixes:**
+
+* Sidenav - resolved problem with error when [side]="'right'" input is used,
+* Sidenav - resolved problem with short animation on component load, the component should be now displayed in its default state for specific breakpoint without visible transition on initialization,
+* Carousel - resolved problem with emitting activeSlideChange multiple times,
+* File upload plugin - query string will be now correctly removed from [defaultFile] url.
+
+**New features:**
+
+* Select - added new inputFocus and inputBlur events that will be emitted on select input focus/blur.
+
 12.1.0
 In version 12.1.0 we added some fixes and new features for the existing components. Check what changed below:
 
