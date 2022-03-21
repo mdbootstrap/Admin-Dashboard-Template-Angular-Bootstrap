@@ -1,3 +1,22 @@
+13.0.0
+
+In version 13.0.0 we added support for Angular 13 and Font Awesome 6. Check what changed below:
+
+**Breaking changes:**
+
+* Added support for Angular 13, this Angular version is now required,
+* Checkbox - changed id input name to checkboxId,
+* Checkbox - styles will be loaded with other core global styles. This will allow you to use checkbox not only as mdb-checkboxcomponent, but also as a standard HTML element with material styles. The mdb-checkbox offers more features but cancause someperformance problems after adding many elements in one application view.
+
+**Dependencies:**
+
+* Updated Font Awesome to v6.0.0.
+
+**Fixes:**
+
+* Added type coercion for boolean and number inputs to resolve problems with inputs types,
+* Select - resolved problem with option type.
+
 12.2.0
 In version 12.2.0 we updated Bootstrap to v4.6.1 and added some fixes and new features for the existing components. Check what changed below:
 
