@@ -43,31 +43,26 @@ ng test
 ng build --prod
 
 **More info:**
-http://mdbootstrap.com/angular/getting-started/
+https://mdbootstrap.com/docs/b5/angular/getting-started/installation/
 
 # FAQ
-http://mdbootstrap.com/angular/faq/
+https://mdbootstrap.com/docs/standard/getting-started/faq/
 
 # Support:
-http://mdbootstrap.com/forums/forum/support/
+http://mdbootstrap.com/support/
 
 
 # Angular 7 tutorial – creating an Angular Bootstrap app, step by step:
-## https://mdbootstrap.com/angular/angular-tutorial/
+https://mdbootstrap.com/education/angular/
 
-# Additional tutorials:
-
-**MDB - Bootstrap tutorial**: https://mdbootstrap.com/bootstrap-tutorial/
-
-**MDB - Wordpress tutorial**: https://mdbootstrap.com/wordpress-tutorial/
 
 # Documentation:
 
-**Huge, detailed documentation avilable online on**: https://mdbootstrap.com/angular
+**Huge, detailed documentation avilable online on**: https://mdbootstrap.com/docs/b5/angular/
 
 # PRO version:
 
-**MDB Admin Template Pro (Angular version)**: https://mdbootstrap.com/products/angular-admin-dashboard/
+**MDB Admin Template Pro (Angular version)**: https://mdbootstrap.com/docs/b5/angular/pro/
 
 # Highlights:  
 **Bootstrap 4**  
@@ -98,18 +93,15 @@ A big **thank you to all our users** who are working with us to improve the soft
 
 # Useful Links:  
 
-Getting started: https://mdbootstrap.com/angular/angular-bootstrap-getting-started/
+Getting started: https://mdbootstrap.com/docs/b5/angular/getting-started/installation/
 
-5 min quick start: https://mdbootstrap.com/angular/mdb-quick-start/  
+5 min quick start:https://mdbootstrap.com/docs/b5/angular/
 
-Material Design + Bootstrap Tutorial: https://mdbootstrap.com/bootstrap-tutorial/  
-
-Material Design + WordPress Tutorial: https://mdbootstrap.com/wordpress-tutorial/  
+Material Design + Bootstrap Tutorial: https://mdbootstrap.com/docs/standard/bootstrap-5-tutorial/
 
 Other Freebies: https://mdbootstrap.com/freebies/  
 
-Premium Templates: https://mdbootstrap.com/templates/  
-
+Premium Templates: https://mdbootstrap.com/docs/standard/templates/admin-dashboard/
 
 # Social Media:  
 
@@ -119,10 +111,8 @@ Facebook: https://www.facebook.com/mdbootstrap
 
 Pinterest: https://pl.pinterest.com/mdbootstrap 
 
-Google+: https://plus.google.com/u/0/b/107863090883699620484/+Mdbootstrap/posts  
-
 Dribbble: https://dribbble.com/mdbootstrap
 
 LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
 
-# Visit our website: https://mdbootstrap.com/
+Visit our website: https://mdbootstrap.com/
