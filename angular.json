@@ -120,8 +120,9 @@
       }
     }
   },
-  "defaultProject": "ng-admin-free",
   "cli": {
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
