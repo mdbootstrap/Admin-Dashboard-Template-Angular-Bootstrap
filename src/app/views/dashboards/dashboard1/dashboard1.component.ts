@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Dashboard1Component implements OnInit {
 
-  public map: any = { lat: 51.678418, lng: 7.809007 };
+  center: google.maps.LatLngLiteral = {
+    lat: 51.678418,
+    lng: 7.809007,
+  };
+
+  marker = {
+    position: { lat: 51.678418, lng: 7.809007 },
+  };
+
+  mapOptions: google.maps.MapOptions = {
+    mapTypeId: 'roadmap',
+  };
+
   public chart1Type:string = 'bar';
   public chart2Type:string = 'pie';
   public chart3Type:string = 'line';
@@ -56,7 +68,7 @@ export class Dashboard1Component implements OnInit {
   };
 
   constructor() {
-  
+
   }
 
   ngOnInit() {
