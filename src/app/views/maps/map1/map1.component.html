@@ -11,10 +11,9 @@
 
             <!--Card content-->
             <mdb-card-body class="text-center">
-                <agm-map [latitude]="map.lat" [longitude]="map.lng" [mapTypeId]="'roadmap'" style="height: 300px">
-                    <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
-                </agm-map>
-
+                <google-map height="300px" width="100%" [center]="center" [options]="roadmapMapOptions">
+                    <map-marker [position]="marker.position"></map-marker>
+                </google-map>
             </mdb-card-body>
             <!--/.Card content-->
         </mdb-card>
@@ -32,10 +31,9 @@
 
             <!--Card content-->
             <mdb-card-body class="text-center">
-                <agm-map [latitude]="map.lat" [longitude]="map.lng" [mapTypeId]="'hybrid'" style="height: 300px">
-                    <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
-                </agm-map>
-
+                <google-map height="300px" width="100%" [center]="center" [options]="hybridMapOptions">
+                    <map-marker [position]="marker.position"></map-marker>
+                </google-map>
             </mdb-card-body>
             <!--/.Card content-->
         </mdb-card>
@@ -55,10 +53,9 @@
 
             <!--Card content-->
             <mdb-card-body class="text-center">
-                <agm-map [latitude]="map.lat" [longitude]="map.lng" [mapTypeId]="'satellite'" style="height: 300px">
-                    <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
-                </agm-map>
-
+                <google-map height="300px" width="100%" [center]="center" [options]="satelliteMapOptions">
+                    <map-marker [position]="marker.position"></map-marker>
+                </google-map>
             </mdb-card-body>
             <!--/.Card content-->
         </mdb-card>
@@ -76,10 +73,9 @@
 
             <!--Card content-->
             <mdb-card-body class="text-center">
-                <agm-map [latitude]="map.lat" [longitude]="map.lng" [mapTypeId]="'terrain'" style="height: 300px">
-                    <agm-marker [latitude]="map.lat" [longitude]="map.lng"></agm-marker>
-                </agm-map>
-
+                <google-map height="300px" width="100%" [center]="center" [options]="terrainMapOptions">
+                    <map-marker [position]="marker.position"></map-marker>
+                </google-map>
             </mdb-card-body>
             <!--/.Card content-->
         </mdb-card>

@@ -4,8 +4,6 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AgmCoreModule } from '@agm/core';
-
 import { CalendarModule, DateAdapter,  } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { SharedModule } from '../shared/shared.module';
@@ -19,6 +17,7 @@ import { StatsCard2Component } from './dashboards/common/stats-card2/stats-card2
 import { Dashboard1Component } from './dashboards/dashboard1/dashboard1.component';
 import { Profile1Component } from './profile/profile1/profile1.component';
 import { HelpComponent } from './help/help.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 @NgModule({
@@ -29,10 +28,7 @@ import { HelpComponent } from './help/help.component';
     BrowserModule,
     BrowserAnimationsModule,
     SharedModule,
-    AgmCoreModule.forRoot({
-      // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
-      apiKey: ''
-    }),
+    GoogleMapsModule,
     CalendarModule.forRoot({
       provide: DateAdapter,
       useFactory: adapterFactory,
