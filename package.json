@@ -1,6 +1,6 @@
 {
   "name": "ng-admin-free",
-  "version": "13.0.0",
+  "version": "14.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -22,7 +22,7 @@
     "@angular/platform-browser-dynamic": "^14.2.7",
     "@angular/router": "^14.2.7",
     "@fortawesome/fontawesome-free": "^6.0.0",
-    "angular-bootstrap-md": "file:angular-bootstrap-md-13.0.0.tgz",
+    "angular-bootstrap-md": "file:angular-bootstrap-md-14.0.0.tgz",
     "angular-calendar": "^0.29.0",
     "chart.js": "^2.9.4",
     "date-fns": "^2.23.0",
