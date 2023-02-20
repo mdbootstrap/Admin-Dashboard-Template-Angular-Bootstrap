@@ -2,16 +2,16 @@
 
 # Bootstrap 4 & Material Design - Angular Admin Dashboard Template
 
-Free, responsive Admin Dashboard template containing different styles of dashboards, data presentations, and numerous insightful components. Built with the newest Bootstrap 4, **Angular 5** and Material Design. MIT license – free for personal and commercial use. It's build with MDBootstrap - powerful and free UI Kit, containing **400+** material UI elements, **600+** material icons, **74** CSS animations, SASS files, templates, tutorials and many more.
+Free, responsive Admin Dashboard template containing different styles of dashboards, data presentations, and numerous insightful components. Built with the newest Bootstrap 4, **Angular 15** and Material Design. MIT license – free for personal and commercial use. It's build with MDBootstrap - powerful and free UI Kit, containing **400+** material UI elements, **600+** material icons, **74** CSS animations, SASS files, templates, tutorials and many more.
 
 ________
 
-# Live Previews: 
+# Live Previews:
 ## http://ng-admin.mdbootstrap.com/dashboards/v1
 
 # Most important features:
 
-1. Build upon Bootstrap 4 & Angular 7 & MDB
+1. Build upon Bootstrap 4 & Angular 15 & MDB
 
 2. Plenty of useful components
 
@@ -25,19 +25,19 @@ ________
 
 7. Fully responsive
 
-# Demo:  
+# Demo:
 **Main demo**: http://ng-admin.mdbootstrap.com/dashboards/v1
 
 # Installation:
 
-**Install:** 
+**Install:**
 npm i
 
 **Run:**
 ng serve -o
 
 **Test:**
-ng test 
+ng test
 
 **Production Build:**
 ng build --prod
@@ -52,7 +52,7 @@ https://mdbootstrap.com/docs/standard/getting-started/faq/
 http://mdbootstrap.com/support/
 
 
-# Angular 7 tutorial – creating an Angular Bootstrap app, step by step:
+# Angular tutorial – creating an Angular Bootstrap app, step by step:
 https://mdbootstrap.com/education/angular/
 
 
@@ -64,34 +64,34 @@ https://mdbootstrap.com/education/angular/
 
 **MDB Admin Template Pro (Angular version)**: https://mdbootstrap.com/docs/b5/angular/pro/
 
-# Highlights:  
-**Bootstrap 4**  
+# Highlights:
+**Bootstrap 4**
 Thanks to MDB you can take advantage of all features of the newest Bootstrap 4 Stable
 
-**Free for personal and commercial use**  
-Our license is user-friendly. Feel free to use MDB for both private as well as commercial projects.   
+**Free for personal and commercial use**
+Our license is user-friendly. Feel free to use MDB for both private as well as commercial projects.
 
-**Fully responsive**  
+**Fully responsive**
 It doesn't matter whether your project will be displayed on desktop, laptop, tablet or mobile phone. MDB looks great on each screen.
 
-**Technical support**  
-We really care about reliability. If you have any questions - do not hesitate to contact us.  
+**Technical support**
+We really care about reliability. If you have any questions - do not hesitate to contact us.
 
-**Active community**  
-Our society grows day by day. Visit **our forum** and check how it is to be a part of our family.  
+**Active community**
+Our society grows day by day. Visit **our forum** and check how it is to be a part of our family.
 
-**Flex box**  
-MDB fully suppports Flex Box. You can forget about alignment issues.  
+**Flex box**
+MDB fully suppports Flex Box. You can forget about alignment issues.
 
-**Latest Angular**  
-MDB is integrated with newest Angular 7, therefore you can use all the newest features which comes along with it.  
+**Latest Angular**
+MDB is integrated with newest Angular 15, therefore you can use all the newest features which comes along with it.
 
-**Detailed documentation:**  
-We give you detailed documentation at your disposal. It will help you to implement your ideas easily.  
+**Detailed documentation:**
+We give you detailed documentation at your disposal. It will help you to implement your ideas easily.
 
-A big **thank you to all our users** who are working with us to improve the software. We wouldn't be where we are without you.  
+A big **thank you to all our users** who are working with us to improve the software. We wouldn't be where we are without you.
 
-# Useful Links:  
+# Useful Links:
 
 Getting started: https://mdbootstrap.com/docs/b5/angular/getting-started/installation/
 
@@ -99,17 +99,17 @@ Getting started: https://mdbootstrap.com/docs/b5/angular/getting-started/install
 
 Material Design + Bootstrap Tutorial: https://mdbootstrap.com/docs/standard/bootstrap-5-tutorial/
 
-Other Freebies: https://mdbootstrap.com/freebies/  
+Other Freebies: https://mdbootstrap.com/freebies/
 
 Premium Templates: https://mdbootstrap.com/docs/standard/templates/admin-dashboard/
 
-# Social Media:  
+# Social Media:
 
-Twitter: https://twitter.com/MDBootstrap  
+Twitter: https://twitter.com/MDBootstrap
 
-Facebook: https://www.facebook.com/mdbootstrap  
+Facebook: https://www.facebook.com/mdbootstrap
 
-Pinterest: https://pl.pinterest.com/mdbootstrap 
+Pinterest: https://pl.pinterest.com/mdbootstrap
 
 Dribbble: https://dribbble.com/mdbootstrap
 

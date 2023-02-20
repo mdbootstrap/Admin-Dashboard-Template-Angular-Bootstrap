@@ -1,3 +1,17 @@
+15.0.0
+
+This version requires Angular v15. Follow the Angular update guide to migrate your project to Angular 15.
+
+**Breaking changes:**
+
+* Added support for Angular 15, this Angular version is now required,
+
+**Fixes and improvements:**
+
+* Navbar - resolved problem with height of collapsed component on initialization,
+* Navbar - resolved problem with height of expanded menu on component initialization and window resize,
+* Sidenav - resolved problem with sidenav mask size in component with dynamic content.
+
 14.0.0
 
 This version requires Angular v14 and Node 14.15.0 (or later). Follow the Angular update guide to migrate your project to Angular 14:
